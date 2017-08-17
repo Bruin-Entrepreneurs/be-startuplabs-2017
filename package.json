@@ -1,11 +1,11 @@
 {
   "name": "bruinentrepreneurs",
   "version": "1.0.0",
-  "description": "Bruin Entrepreneurs Website",
-  "main": "server.js",
+  "description": "BE Startup Labs Website",
+  "main": "startuplabs.js",
   "scripts": {
     "test": "npm test",
-    "start": "node server.js"
+    "start": "node startuplabs.js"
   },
   "dependencies": {
     "aws-sdk": "latest",
@@ -23,12 +23,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/epicchewy/be_website.git"
+    "url": "git+https://github.com/"
   },
   "author": "Bruin Entrepreneurs",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/epicchewy/be_website/issues"
+    "url": "https://github.com/"
   },
-  "homepage": "https://github.com/epicchewy/be_website#readme"
+  "homepage": "https://github.com/"
 }
