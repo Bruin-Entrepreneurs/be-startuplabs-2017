@@ -7,15 +7,24 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  z-index: 5; }
+  z-index: 0; }
 
 .gray-bar {
   height: 100%;
   width: 60px;
   background-color: rgba(196, 196, 196, 0.3); }
 
-.rubik {
-  font-family: Rubik; }
+.rubik, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing .outer-flex-container .title-container h1 {
+  font-family: 'Rubik', sans-serif; }
+
+.pink, .landing .outer-flex-container .title-container h1 {
+  color: #F2758F; }
+
+.blue, .landing .outer-flex-container .title-container h2 {
+  color: #527EDD; }
+
+.navy, .landing .outer-flex-container .inner-nav-flex-container ul li a {
+  color: #072956; }
 
 body {
   margin: 0; }
@@ -23,8 +32,47 @@ body {
 section {
   height: 100vh; }
 
-.landing .outer-flex-container {
-  display: flex;
-  flex-direction: column; }
+.landing {
+  width: 80%;
+  margin: 0 10% 0 10%; }
+  .landing .outer-flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%; }
+    .landing .outer-flex-container .inner-nav-flex-container {
+      margin-top: 30px;
+      height: 70px;
+      width: 100%;
+      z-index: 1; }
+      .landing .outer-flex-container .inner-nav-flex-container ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 30px 0px 0px;
+        align-items: center; }
+        .landing .outer-flex-container .inner-nav-flex-container ul li {
+          list-style: none;
+          overflow: hidden;
+          width: fit-content; }
+          .landing .outer-flex-container .inner-nav-flex-container ul li a {
+            text-decoration: none;
+            font-weight: bold; }
+        .landing .outer-flex-container .inner-nav-flex-container ul .box-header {
+          height: -webkit-fill-available;
+          width: 150px;
+          background-color: #C4C4C4; }
+    .landing .outer-flex-container .title-container {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%); }
+      .landing .outer-flex-container .title-container h2 {
+        font: 20px 'Montserrat', sans-serif;
+        margin: 5px 0px 2px 0px; }
+        .landing .outer-flex-container .title-container h2 span {
+          color: black; }
+      .landing .outer-flex-container .title-container h1 {
+        margin: 4px 0px 5px 0px;
+        font-size: 130px;
+        font-weight: bold; }
 
 /*# sourceMappingURL=converted.css.map */

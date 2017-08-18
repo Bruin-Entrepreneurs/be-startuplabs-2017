@@ -1,3 +1,5 @@
+
+
 .background-grid{
 	margin: 0 10% 0 10%;
 	height: 100%;
@@ -8,7 +10,7 @@
 	align-items: center;
 	//justify-content: center;
 	justify-content: space-between;
-	z-index: 5;
+	z-index: 0;
 }
 
 .gray-bar{
@@ -17,4 +19,5 @@
 	width: 60px;
 	background-color: rgba(196, 196, 196, 0.3);
 	// margin: 0px 15px 0px 15px;
+
 }
