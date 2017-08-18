@@ -36,6 +36,7 @@ section{
 h3{
 	@extend .rubik;
 	font-size: 38px;
+	font-weight: bold;
 }
 
 p{
@@ -52,6 +53,7 @@ button{
 	bottom: 0px;
 	position: absolute;
 	@extend .rubik;
+	font-size: 12px;
 }
 
 .landing{
@@ -175,7 +177,7 @@ button{
 		margin: 60px 0px 20px 0px;
 	}
 
-	.left-container{
+	.text-container{
 		@extend .margins;
 		width: 45%;
 		position: relative;
@@ -189,10 +191,15 @@ button{
 		}
 	}
 
-	.right-container{
+	.image-container{
 		@extend .margins;
 		width: 40%;
 		background-color: gray;
 	}
 	
+}
+
+.mentors{
+	@extend .program;
+
 }
