@@ -1,0 +1,30 @@
+.background-grid {
+  margin: 0 10% 0 10%;
+  height: 100%;
+  width: 80%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 5; }
+
+.gray-bar {
+  height: 100%;
+  width: 60px;
+  background-color: rgba(196, 196, 196, 0.3); }
+
+.rubik {
+  font-family: Rubik; }
+
+body {
+  margin: 0; }
+
+section {
+  height: 100vh; }
+
+.landing .outer-flex-container {
+  display: flex;
+  flex-direction: column; }
+
+/*# sourceMappingURL=converted.css.map */
