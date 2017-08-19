@@ -33,6 +33,10 @@ router.get('/', (req, res) => {
   res.render('index')
 })
 
+router.get('/startups', (req, res) => {
+	res.render('startups')
+})
+
 // HTTP Requests
 
 router.post('/subscribe', mailchimpController.subscribe)
