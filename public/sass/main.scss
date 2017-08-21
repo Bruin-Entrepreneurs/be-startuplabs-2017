@@ -32,9 +32,15 @@ section{
 	position: relative;
 
 }
-
+h1{
+	@extend .rubik;
+	@extend .pink;
+	margin: 4px 0px 5px 0px;
+	font-weight: bold;		
+}
 h3{
 	@extend .rubik;
+	@extend .navy;
 	font-size: 38px;
 	font-weight: bold;
 }
@@ -42,6 +48,7 @@ h3{
 p{
 	@extend .cabin;
 	font-size: 14px;
+	font-weight: lighter;
 }	
 
 button{
@@ -61,7 +68,7 @@ button{
 	margin: 0 10% 0 10%;
 	.outer-flex-container{
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		height: 100%;
 		
 
@@ -120,11 +127,8 @@ button{
 			}
 
 			h1{
-				@extend .rubik;
-				@extend .pink;
-				margin: 4px 0px 5px 0px;
-				font-size: 130px;
-				font-weight: bold;		
+				@extend h1;
+				font-size: 130px;	
 			}
 
 
@@ -154,7 +158,7 @@ button{
 		position: absolute;
 		z-index: 1;
 	}
-
+	
 	.text-container-outer{
 		width: 80%;
 		height: 70%;
@@ -162,7 +166,9 @@ button{
 		z-index: 2;
 		.text-container-inner{
 			width: 77%;
-		
+			h3{
+				color: white;
+			}
 		}
 
 	}

@@ -36,6 +36,13 @@ router.get('/', (req, res) => {
 router.get('/startups', (req, res) => {
 	res.render('startups')
 })
+router.get('/team', (req, res) => {
+	res.render('team')
+})
+router.get('/contact', (req, res) => {
+	res.render('contact')
+})
+
 
 // HTTP Requests
 

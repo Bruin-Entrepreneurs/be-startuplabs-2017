@@ -19,7 +19,7 @@
   .gray-bar:first-child {
     margin-left: 0px; }
 
-.rubik, h1, .landing .outer-flex-container .title-container h1, h3, .program .text-container h3, .mentors .text-container h3, button, .program .text-container button, .mentors .text-container button, .landing .outer-flex-container .inner-nav-flex-container ul li a {
+.rubik, h1, .landing .outer-flex-container .title-container h1, h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3, button, .program .text-container button, .mentors .text-container button, .block-section .text-container button, .landing .outer-flex-container .inner-nav-flex-container ul li a {
   font-family: 'Rubik', sans-serif; }
 
 .cabin, p {
@@ -31,7 +31,7 @@
 .blue, .landing .outer-flex-container .title-container h2 {
   color: #527EDD; }
 
-.navy, h3, .program .text-container h3, .mentors .text-container h3, .landing .outer-flex-container .inner-nav-flex-container ul li a {
+.navy, h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3, .landing .outer-flex-container .inner-nav-flex-container ul li a {
   color: #072956; }
 
 body {
@@ -47,7 +47,7 @@ h1, .landing .outer-flex-container .title-container h1 {
   margin: 4px 0px 5px 0px;
   font-weight: bold; }
 
-h3, .program .text-container h3, .mentors .text-container h3 {
+h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3 {
   font-size: 38px;
   font-weight: bold; }
 
@@ -55,7 +55,7 @@ p {
   font-size: 14px;
   font-weight: lighter; }
 
-button, .program .text-container button, .mentors .text-container button {
+button, .program .text-container button, .mentors .text-container button, .block-section .text-container button {
   background-color: #072956;
   color: white;
   border: 0px;
@@ -129,19 +129,30 @@ button, .program .text-container button, .mentors .text-container button {
       .about .text-container-outer .text-container-inner h3 {
         color: white; }
 
-.program, .mentors {
+.program, .mentors, .block-section {
   height: 50vh;
   display: flex;
   justify-content: space-between; }
-  .program .margins, .mentors .margins, .program .text-container, .mentors .text-container, .program .image-container, .mentors .image-container {
+  .program .margins, .mentors .margins, .block-section .margins, .program .text-container, .mentors .text-container, .block-section .text-container, .program .image-container, .mentors .image-container, .block-section .image-container {
     margin: 60px 0px 20px 0px; }
-  .program .text-container, .mentors .text-container {
+  .program .text-container, .mentors .text-container, .block-section .text-container {
     width: 45%;
     position: relative; }
-    .program .text-container h3, .mentors .text-container h3 {
+    .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3 {
       margin: 0px 0px 15px 0px; }
-  .program .image-container, .mentors .image-container {
+  .program .image-container, .mentors .image-container, .block-section .image-container {
     width: 40%;
     background-color: gray; }
 
-/*# sourceMappingURL=converted.css.map */
+.landing {
+  height: 50vh; }
+  .landing .title h1, .landing .title .outer-flex-container .title-container h1, .landing .outer-flex-container .title-container .title h1 {
+    margin-top: 20px;
+    font-size: 80px; }
+  .landing .title .inner-text-container {
+    width: 63%; }
+
+.block-section {
+  height: 33vh; }
+
+/*# sourceMappingURL=convertteam.css.map */

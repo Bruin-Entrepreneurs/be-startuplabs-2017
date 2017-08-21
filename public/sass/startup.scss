@@ -1,0 +1,136 @@
+@import 'main';
+
+h4{
+				@extend .rubik;
+
+	@extend .navy;
+	font-size: 39px;
+
+}
+h5{
+	@extend .navy;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.outer-flex-container{
+	.title{
+		h1{
+			@extend h1;
+			font-size: 80px;
+			margin-top: 50px;
+			margin-bottom: 40px;
+		}
+
+	}
+	.bottom-flex-container{
+		display: flex;
+ 		justify-content: space-between;
+
+		.text-container{
+			width: 50%;
+			@extend .rubik;
+			
+			h2{
+				@extend .navy;
+				font-size: 19px;
+				margin-bottom: 0px;
+			}
+			h4{
+				@extend h4;
+				margin-top: 3px;
+				margin-bottom: 30px;
+			}
+			h5{
+				@extend h5;
+			}
+			p{
+				@extend p;
+			}
+		}
+
+		.image-container{
+			width: 42%;
+			background-color: gray;
+			margin: 10px 0 10px 0;
+		}
+		.navy-bar{
+			background-color: #072956;
+			width: 20px;
+		}
+
+
+
+	}
+
+}
+
+.cohorts{
+	.cohort1{
+		display: flex;
+		flex-direction: column;
+
+
+		.title-container{
+			width: 100%;
+			h4{
+				@extend h4;
+				width: 100%;
+				margin: 10px 0px 0px 0px;
+			}	
+		}
+
+		.outer-profile-container{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+			.profile-container{
+				width: 48%;
+				display: flex;
+				justify-content: space-between;
+				margin-top: 15px;
+
+				.width{
+					width: 48%;
+				}
+
+				.rect-image-container{
+					@extend .width;
+					height: 150px;
+					background-color: #C4C4C4;
+					display: flex;
+					align-content: center;
+					justify-content: center;
+					.circle-image-container{
+						background-color: #072956;
+						width: 150px;
+						height: 150px;
+						border-radius: 75px;
+
+					}
+				}
+				.text-container{
+					@extend .width;
+					h5{
+						@extend h5;
+						margin-top: 5px;
+					}
+					p{
+						font-size: 11px;
+						font-weight: lighter;
+					}
+				}
+			}
+		}
+
+	}
+
+	.cohort2{
+		@extend .cohort1;
+		.title-container{
+			margin-top: 25px;
+		}
+	}
+}
+
