@@ -16,7 +16,16 @@
 }
 
 .block-section{
-
 	@extend .program;
-	height: 33vh;
+	height: 50vh;
+}
+
+.mentors2-container {
+	@extend .image-container;
+	background-image: url("../assets/images/team-mentors.jpg");
+}
+
+.partners-container {
+	@extend .image-container;
+	background-image: url("../assets/images/team-partners.jpg");
 }

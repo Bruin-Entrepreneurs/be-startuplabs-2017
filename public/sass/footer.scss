@@ -1,0 +1,31 @@
+.footer {
+  width: 100vw;
+  height: 100px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #527EDD;
+  z-index: 3;
+
+  #navy {
+    color: #072956;
+  }
+
+  .links {
+    display: flex;
+    display: -webkit-flex;
+    letter-spacing: .5px;
+
+    a {
+      flex: 1;
+    }
+  }
+
+  .logo {
+    margin: 20px 0px 0px 0px;
+    color: #000000;
+
+    span {
+      font-size: 26px
+    }
+  }
+}

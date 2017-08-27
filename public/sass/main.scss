@@ -1,4 +1,5 @@
 @import 'background';
+@import 'footer';
 
 .rubik{
 	font-family: 'Rubik', sans-serif;
@@ -32,12 +33,14 @@ section{
 	position: relative;
 
 }
+
 h1{
 	@extend .rubik;
 	@extend .pink;
 	margin: 4px 0px 5px 0px;
 	font-weight: bold;		
 }
+
 h3{
 	@extend .rubik;
 	@extend .navy;
@@ -49,6 +52,7 @@ p{
 	@extend .cabin;
 	font-size: 14px;
 	font-weight: lighter;
+	letter-spacing: .4px;
 }	
 
 button{
@@ -60,19 +64,26 @@ button{
 	bottom: 0px;
 	position: absolute;
 	@extend .rubik;
-	font-size: 12px;
+	font-size: 13px;
+	letter-spacing: .5px;
+}
+
+.image-container {
+	@extend .margins;
+	width: 40%;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .landing{
 	width: 80%;
-	margin: 0 10% 0 10%;
+	margin: 0 10% 5% 10%;
+
 	.outer-flex-container{
 		display: flex;
 		flex-direction: column;
 		height: 100%;
 		
-
-
 		.inner-nav-flex-container{
 			margin-top: 30px;
 			height: 70px;
@@ -114,6 +125,10 @@ button{
 		}
 
 		.title-container{
+			position: absolute;
+			top: 50%;
+			transform: translate(0,-50%);
+
 			h2{
 				font: 20px 'Montserrat', sans-serif;
 				margin: 5px 0px 2px 0px;
@@ -130,22 +145,14 @@ button{
 				@extend h1;
 				font-size: 130px;	
 			}
-
-
-			position: absolute;
-			top: 50%;
-			transform: translate(0,-50%);
 		}
 	}
 
 }
 
-
-
-
 .about{
-	background-image: url("/public/assets/images/ucla.png");
-	height: 50vh;
+	background-image: url("../assets/images/main-ucla.png");
+	height: 60vh;
 	background-size: cover;
 	display: flex;
 	justify-content: center;
@@ -164,8 +171,11 @@ button{
 		height: 70%;
 		color: white;
 		z-index: 2;
+
 		.text-container-inner{
+			margin: -50px 0px 0px 0px;
 			width: 77%;
+
 			h3{
 				color: white;
 			}
@@ -174,38 +184,43 @@ button{
 	}
 }
 
-.program{
-	height: 50vh;
+.program {
+	height: 65vh;
 	display: flex;
 	justify-content: space-between;
 
-	.margins{
+	.margins {
 		margin: 60px 0px 20px 0px;
 	}
 
-	.text-container{
+	.text-container {
 		@extend .margins;
 		width: 45%;
 		position: relative;
+
 		h3{
 			@extend h3;
 			margin: 0px 0px 15px 0px;
 		}
+
 		button{
 			@extend button;
 			
 		}
 	}
 
-	.image-container{
-		@extend .margins;
-		width: 40%;
-		background-color: gray;
+	.program-container {
+		@extend .image-container;
+		background-image: url("../assets/images/main-program.jpg");
 	}
-	
 }
 
-.mentors{
+.mentors {
 	@extend .program;
+
+	.mentors1-container {
+			@extend .image-container;
+			background-image: url("../assets/images/main-mentors.jpg");
+		}
 
 }

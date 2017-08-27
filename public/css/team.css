@@ -1,0 +1,196 @@
+.background-grid {
+  margin: 0 10% 0 10%;
+  height: 100%;
+  width: 80%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: -1; }
+
+.gray-bar {
+  height: 100%;
+  width: 100px;
+  background-color: rgba(196, 196, 196, 0.3);
+  margin: 0px 15px 0px 15px;
+  z-index: -1; }
+  .gray-bar:last-child {
+    margin-right: 0px; }
+  .gray-bar:first-child {
+    margin-left: 0px; }
+
+.footer {
+  width: 100vw;
+  height: 100px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #527EDD;
+  z-index: 3; }
+  .footer #navy {
+    color: #072956; }
+  .footer .links {
+    display: flex;
+    display: -webkit-flex;
+    letter-spacing: .5px; }
+    .footer .links a {
+      flex: 1; }
+  .footer .logo {
+    margin: 20px 0px 0px 0px;
+    color: #000000; }
+    .footer .logo span {
+      font-size: 26px; }
+
+.rubik, h1, .landing .outer-flex-container .title-container h1, h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3, button, .program .text-container button, .mentors .text-container button, .block-section .text-container button, .landing .outer-flex-container .inner-nav-flex-container ul li a {
+  font-family: 'Rubik', sans-serif; }
+
+.cabin, p {
+  font-family: 'Cabin', sans-serif; }
+
+.pink, h1, .landing .outer-flex-container .title-container h1 {
+  color: #F2758F; }
+
+.blue, .landing .outer-flex-container .title-container h2 {
+  color: #527EDD; }
+
+.navy, h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3, .landing .outer-flex-container .inner-nav-flex-container ul li a {
+  color: #072956; }
+
+body {
+  margin: 0; }
+
+section {
+  height: 100vh;
+  width: 80%;
+  margin: 0 10% 0 10%;
+  position: relative; }
+
+h1, .landing .outer-flex-container .title-container h1 {
+  margin: 4px 0px 5px 0px;
+  font-weight: bold; }
+
+h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3 {
+  font-size: 38px;
+  font-weight: bold; }
+
+p {
+  font-size: 14px;
+  font-weight: lighter;
+  letter-spacing: .4px; }
+
+button, .program .text-container button, .mentors .text-container button, .block-section .text-container button {
+  background-color: #072956;
+  color: white;
+  border: 0px;
+  width: 200px;
+  height: 45px;
+  bottom: 0px;
+  position: absolute;
+  font-size: 13px;
+  letter-spacing: .5px; }
+
+.image-container, .program .program-container, .mentors .program-container, .block-section .program-container, .mentors .mentors1-container, .mentors2-container, .partners-container {
+  width: 40%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.landing {
+  width: 80%;
+  margin: 0 10% 5% 10%; }
+  .landing .outer-flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+    .landing .outer-flex-container .inner-nav-flex-container {
+      margin-top: 30px;
+      height: 70px;
+      width: 100%;
+      z-index: 1; }
+      .landing .outer-flex-container .inner-nav-flex-container ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 30px 0px 0px;
+        align-items: center; }
+        .landing .outer-flex-container .inner-nav-flex-container ul li {
+          list-style: none;
+          overflow: hidden;
+          width: fit-content; }
+          .landing .outer-flex-container .inner-nav-flex-container ul li a {
+            text-decoration: none;
+            font-weight: bold; }
+        .landing .outer-flex-container .inner-nav-flex-container ul .box-header {
+          height: -webkit-fill-available;
+          width: 150px;
+          background-color: #C4C4C4; }
+    .landing .outer-flex-container .title-container {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%); }
+      .landing .outer-flex-container .title-container h2 {
+        font: 20px 'Montserrat', sans-serif;
+        margin: 5px 0px 2px 0px; }
+        .landing .outer-flex-container .title-container h2 span {
+          color: black; }
+      .landing .outer-flex-container .title-container h1 {
+        font-size: 130px; }
+
+.about {
+  background-image: url("../assets/images/main-ucla.png");
+  height: 60vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .about .image-filter {
+    background-color: rgba(0, 0, 0, 0.58);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1; }
+  .about .text-container-outer {
+    width: 80%;
+    height: 70%;
+    color: white;
+    z-index: 2; }
+    .about .text-container-outer .text-container-inner {
+      margin: -50px 0px 0px 0px;
+      width: 77%; }
+      .about .text-container-outer .text-container-inner h3 {
+        color: white; }
+
+.program, .mentors, .block-section {
+  height: 65vh;
+  display: flex;
+  justify-content: space-between; }
+  .program .margins, .mentors .margins, .block-section .margins, .program .image-container, .mentors .image-container, .block-section .image-container, .program .program-container, .mentors .program-container, .block-section .program-container, .mentors .mentors1-container, .program .mentors2-container, .mentors .mentors2-container, .block-section .mentors2-container, .program .partners-container, .mentors .partners-container, .block-section .partners-container, .program .text-container, .mentors .text-container, .block-section .text-container {
+    margin: 60px 0px 20px 0px; }
+  .program .text-container, .mentors .text-container, .block-section .text-container {
+    width: 45%;
+    position: relative; }
+    .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3 {
+      margin: 0px 0px 15px 0px; }
+  .program .program-container, .mentors .program-container, .block-section .program-container {
+    background-image: url("../assets/images/main-program.jpg"); }
+
+.mentors .mentors1-container {
+  background-image: url("../assets/images/main-mentors.jpg"); }
+
+.landing {
+  height: 50vh; }
+  .landing .title h1, .landing .title .outer-flex-container .title-container h1, .landing .outer-flex-container .title-container .title h1 {
+    margin-top: 20px;
+    font-size: 80px; }
+  .landing .title .inner-text-container {
+    width: 63%; }
+
+.block-section {
+  height: 50vh; }
+
+.mentors2-container {
+  background-image: url("../assets/images/team-mentors.jpg"); }
+
+.partners-container {
+  background-image: url("../assets/images/team-partners.jpg"); }
+
+/*# sourceMappingURL=team.css.map */
