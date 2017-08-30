@@ -1,6 +1,6 @@
 @import 'main';
-
 h4 {
+
 	@extend .rubik;
 	@extend .navy;
 	font-size: 39px;
@@ -11,58 +11,66 @@ h5 {
 	font-size: 16px;
 	margin-bottom: 10px;
 }
-.outer-flex-container{
-	.title{
-		h1{
-			@extend h1;
-			font-size: 80px;
-			margin-top: 20px;
-			margin-bottom: 40px;
-		}
 
+
+.landing-startups{
+	@extend .landing;
+	.outer-flex-container{
+		.inner-nav-flex-container{
+			flex: 1;
+		}
+		.title{
+			flex: 2;
+
+			h1{
+				@extend h1;
+				font-size: 80px;
+				margin-top: 20px;
+				margin-bottom: 40px;
+			}
+		}
+		.bottom-flex-container{
+			flex: 6;
+			display: flex;
+	 		justify-content: space-between;
+			.text-container{
+				flex: 5;
+				// width: 50%;
+				margin-right: 15px;
+				@extend .rubik;
+				h2{
+					@extend .navy;
+					font-size: 19px;
+					margin-bottom: 0px;
+				}
+				h4{
+					@extend h4;
+					margin-top: 3px;
+					margin-bottom: 30px;
+				}
+				h5{
+					@extend h5;
+				}
+				p{
+					@extend p;
+				}
+			}
+			.image-container{
+				flex: 6;
+				margin: 10px 0 10px 0;
+				background-image: url("../assets/images/playfull-logo.png");
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+			}
+			.navy-bar{
+				background-color: #072956;
+				width: 20px;
+				margin-right: 10px;
+			}
+		}
 	}
-	.bottom-flex-container{
-		display: flex;
- 		justify-content: space-between;
-
-		.text-container{
-			width: 50%;
-			@extend .rubik;
-			
-			h2{
-				@extend .navy;
-				font-size: 19px;
-				margin-bottom: 0px;
-			}
-			h4{
-				@extend h4;
-				margin-top: 3px;
-				margin-bottom: 30px;
-			}
-			h5{
-				@extend h5;
-			}
-			p{
-				@extend p;
-			}
-		}
-
-		.image-container{
-			width: 42%;
-			background-color: gray;
-			margin: 10px 0 10px 0;
-			background-image: url("../assets/images/playfull-logo.png");
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
-		.navy-bar{
-			background-color: #072956;
-			width: 20px;
-		}
-	}
-
 }
-
 .cohorts{
 	margin-top: 10%;
 	.cohort1{
@@ -77,23 +85,19 @@ h5 {
 				margin: 10px 0px 0px 0px;
 			}	
 		}
-
 		.outer-profile-container{
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
 			flex-wrap: wrap;
-
 			.profile-container{
-				width: 48%;
+				width: 100%;
 				display: flex;
 				justify-content: space-between;
 				margin-top: 15px;
-
 				.width{
 					width: 48%;
 				}
-
 				.rect-image-container{
 					@extend .width;
 					height: 150px;
@@ -106,7 +110,6 @@ h5 {
 						width: 150px;
 						height: 150px;
 						border-radius: 75px;
-
 					}
 				}
 				.text-container{
@@ -122,9 +125,7 @@ h5 {
 				}
 			}
 		}
-
 	}
-
 	.cohort2{
 		@extend .cohort1;
 		.title-container{
@@ -133,3 +134,113 @@ h5 {
 	}
 }
 
+
+@media (max-width: 1200px) {
+	.landing-startups{
+			h1{
+				font-size: 105px;
+			}
+	}
+	.cohorts{
+		height: auto;
+		.cohort1{
+			.outer-profile-container{
+				.profile-container{
+					.text-container{
+						p{
+							font-size: 11px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.landing-startups{
+		.title{
+			h1{
+				font-size: 70px;
+			}
+		}
+		.bottom-flex-container{
+			.text-container{
+				h4{
+					margin-bottom: 15px;
+					font-size: 30px;
+				}
+				p{
+					font-size: 11px;
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 500px) {
+	.landing-startups{
+		height: 150vh;
+
+		.box-header{
+			width: 0px !important;
+		}
+		a{
+			font-size: 8px;
+		}
+		.title{
+			h1{
+				font-size: 28px;
+			}
+		}
+		.bottom-flex-container{
+			flex-direction: column;
+			flex: 8 !important;
+
+			.text-container{
+				overflow: hidden;
+				h2{
+					font-size: 14px;
+				}
+				h4{
+					font-size: 25px;
+					margin-bottom: 10px;
+				}
+				p{
+					font-size: 11px;
+				}
+				h5{
+					margin-top: 10px;
+				}
+			}
+			.navy-bar{
+				width: 0px;
+			}
+			.image-container{
+				flex: 3 !important;
+			}
+		}
+	}
+	.cohorts{
+		height: auto;
+		.cohort1{
+			.title-container{
+				h4{
+					font-size: 45px;
+				}
+			}
+		}
+		.outer-profile-container{
+			.profile-container{
+				width: 100% !important;
+				flex-direction: column;
+				.text-container{
+					width: 100% !important;
+				}
+				.rect-image-container{
+					width: 100% !important;
+				}
+			}
+		}
+	}
+}

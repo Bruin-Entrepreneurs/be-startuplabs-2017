@@ -7,14 +7,11 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	// justify-content: space-between;
 	z-index: -1;
 }
-
 .gray-bar{
 	height: 100%;
 	width: 100px;
-	// width: 60px;
 	background-color: rgba(196, 196, 196, 0.3);
 	margin: 0px 15px 0px 15px;
 	z-index: -1;
@@ -22,9 +19,7 @@
 	&:last-child{
 		margin-right: 0px;
 	}
-
 	&:first-child{
 		margin-left: 0px;
 	}
 }
-

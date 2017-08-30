@@ -41,19 +41,19 @@
     .footer .logo span {
       font-size: 26px; }
 
-.rubik, h1, .landing .outer-flex-container .title-container h1, h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3, button, .program .text-container button, .mentors .text-container button, .block-section .text-container button, .landing .outer-flex-container .inner-nav-flex-container ul li a {
+.rubik, h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1, h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3, .button, .program .text-container .button, .mentors .text-container .button, .block-section .text-container .button, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-team .outer-flex-container .inner-nav-flex-container ul li a {
   font-family: 'Rubik', sans-serif; }
 
 .cabin, p {
   font-family: 'Cabin', sans-serif; }
 
-.pink, h1, .landing .outer-flex-container .title-container h1 {
+.pink, h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1 {
   color: #F2758F; }
 
-.blue, .landing .outer-flex-container .title-container h2 {
+.blue, .landing .outer-flex-container .title-container h2, .landing-team .outer-flex-container .title-container h2 {
   color: #527EDD; }
 
-.navy, h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3, .landing .outer-flex-container .inner-nav-flex-container ul li a {
+.navy, h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-team .outer-flex-container .inner-nav-flex-container ul li a {
   color: #072956; }
 
 body {
@@ -65,7 +65,7 @@ section {
   margin: 0 10% 0 10%;
   position: relative; }
 
-h1, .landing .outer-flex-container .title-container h1 {
+h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1 {
   margin: 4px 0px 5px 0px;
   font-weight: bold; }
 
@@ -78,7 +78,7 @@ p {
   font-weight: lighter;
   letter-spacing: .4px; }
 
-button, .program .text-container button, .mentors .text-container button, .block-section .text-container button {
+.button, .program .text-container .button, .mentors .text-container .button, .block-section .text-container .button {
   background-color: #072956;
   color: white;
   border: 0px;
@@ -87,52 +87,55 @@ button, .program .text-container button, .mentors .text-container button, .block
   bottom: 0px;
   position: absolute;
   font-size: 13px;
-  letter-spacing: .5px; }
+  letter-spacing: .5px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .image-container, .program .program-container, .mentors .program-container, .block-section .program-container, .mentors .mentors1-container, .mentors2-container, .partners-container {
-  width: 40%;
+  flex: 11;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden; }
 
-.landing {
-  width: 80%;
-  margin: 0 10% 5% 10%; }
-  .landing .outer-flex-container {
+.landing, .landing-team {
+  width: 80%; }
+  .landing .outer-flex-container, .landing-team .outer-flex-container {
     display: flex;
     flex-direction: column;
     height: 100%; }
-    .landing .outer-flex-container .inner-nav-flex-container {
+    .landing .outer-flex-container .inner-nav-flex-container, .landing-team .outer-flex-container .inner-nav-flex-container {
       margin-top: 30px;
       height: 70px;
       width: 100%;
       z-index: 1; }
-      .landing .outer-flex-container .inner-nav-flex-container ul {
+      .landing .outer-flex-container .inner-nav-flex-container ul, .landing-team .outer-flex-container .inner-nav-flex-container ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 0px 30px 0px 0px;
         align-items: center; }
-        .landing .outer-flex-container .inner-nav-flex-container ul li {
+        .landing .outer-flex-container .inner-nav-flex-container ul li, .landing-team .outer-flex-container .inner-nav-flex-container ul li {
           list-style: none;
           overflow: hidden;
           width: fit-content; }
-          .landing .outer-flex-container .inner-nav-flex-container ul li a {
+          .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-team .outer-flex-container .inner-nav-flex-container ul li a {
             text-decoration: none;
             font-weight: bold; }
-        .landing .outer-flex-container .inner-nav-flex-container ul .box-header {
+        .landing .outer-flex-container .inner-nav-flex-container ul .box-header, .landing-team .outer-flex-container .inner-nav-flex-container ul .box-header {
           height: -webkit-fill-available;
           width: 150px;
           background-color: #C4C4C4; }
-    .landing .outer-flex-container .title-container {
+    .landing .outer-flex-container .title-container, .landing-team .outer-flex-container .title-container {
       position: absolute;
       top: 50%;
       transform: translate(0, -50%); }
-      .landing .outer-flex-container .title-container h2 {
+      .landing .outer-flex-container .title-container h2, .landing-team .outer-flex-container .title-container h2 {
         font: 20px 'Montserrat', sans-serif;
         margin: 5px 0px 2px 0px; }
-        .landing .outer-flex-container .title-container h2 span {
+        .landing .outer-flex-container .title-container h2 span, .landing-team .outer-flex-container .title-container h2 span {
           color: black; }
-      .landing .outer-flex-container .title-container h1 {
+      .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1 {
         font-size: 130px; }
 
 .about {
@@ -166,31 +169,132 @@ button, .program .text-container button, .mentors .text-container button, .block
   .program .margins, .mentors .margins, .block-section .margins, .program .image-container, .mentors .image-container, .block-section .image-container, .program .program-container, .mentors .program-container, .block-section .program-container, .mentors .mentors1-container, .program .mentors2-container, .mentors .mentors2-container, .block-section .mentors2-container, .program .partners-container, .mentors .partners-container, .block-section .partners-container, .program .text-container, .mentors .text-container, .block-section .text-container {
     margin: 60px 0px 20px 0px; }
   .program .text-container, .mentors .text-container, .block-section .text-container {
-    width: 45%;
+    flex: 9;
     position: relative; }
     .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3 {
       margin: 0px 0px 15px 0px; }
+  .program .space, .mentors .space, .block-section .space {
+    flex: 1;
+    position: relative; }
   .program .program-container, .mentors .program-container, .block-section .program-container {
     background-image: url("../assets/images/main-program.jpg"); }
 
 .mentors .mentors1-container {
   background-image: url("../assets/images/main-mentors.jpg"); }
 
-.landing {
-  height: 50vh; }
-  .landing .title h1, .landing .title .outer-flex-container .title-container h1, .landing .outer-flex-container .title-container .title h1 {
-    margin-top: 20px;
-    font-size: 80px; }
-  .landing .title .inner-text-container {
-    width: 63%; }
+.vignette {
+  position: relative;
+  height: 100%;
+  margin: 0px; }
+  .vignette:after {
+    -moz-box-shadow: inset 0 0 10em #666;
+    -webkit-box-shadow: inset 0 0 10em #666;
+    box-shadow: inset 0 0 10em #666;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    content: ""; }
 
-.block-section {
-  height: 50vh; }
+@media (max-width: 1200px) {
+  .landing h1, .landing-team h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1 {
+    font-size: 105px; }
+
+  .program p, .mentors p, .block-section p {
+    font-size: 12px; } }
+@media (max-width: 900px) {
+  .landing h1, .landing-team h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1 {
+    font-size: 75px; }
+
+  .about h3, .about .program .text-container h3, .program .text-container .about h3, .about .mentors .text-container h3, .mentors .text-container .about h3, .about .block-section .text-container h3, .block-section .text-container .about h3 {
+    font-size: 30px; }
+  .about p {
+    font-size: 11px; }
+
+  .program h3, .mentors h3, .block-section h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3 {
+    font-size: 20px; }
+  .program p, .mentors p, .block-section p {
+    font-size: 8px; } }
+@media (max-width: 500px) {
+  .landing .box-header, .landing-team .box-header {
+    width: 0px !important; }
+  .landing a, .landing-team a {
+    font-size: 8px; }
+  .landing .title-container h2, .landing-team .title-container h2 {
+    font-size: 11px !important; }
+  .landing .title-container h1, .landing-team .title-container h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1 {
+    font-size: 28px; }
+
+  .about .text-container-inner {
+    width: 100% !important; }
+    .about .text-container-inner h3 {
+      font-size: 13px; }
+    .about .text-container-inner p {
+      font-size: 10px; }
+
+  .program, .mentors, .block-section {
+    flex-direction: column;
+    height: 85vh; }
+    .program .margins, .mentors .margins, .block-section .margins, .program .image-container, .mentors .image-container, .block-section .image-container, .program .program-container, .mentors .program-container, .block-section .program-container, .mentors .mentors1-container, .program .mentors2-container, .mentors .mentors2-container, .block-section .mentors2-container, .program .partners-container, .mentors .partners-container, .block-section .partners-container, .program .text-container, .mentors .text-container, .block-section .text-container {
+      margin: 20px 0px 10px 0px; }
+    .program h3, .mentors h3, .block-section h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3 {
+      margin-bottom: 5px; }
+
+  .mentors .mentors1-container {
+    order: 3; }
+  .mentors .space {
+    order: 2; }
+  .mentors .text-container {
+    order: 1; }
+
+  .button, .program .text-container .button, .mentors .text-container .button, .block-section .text-container .button {
+    width: 110px;
+    height: 21px;
+    font-size: 8px; }
+
+  .space {
+    flex: 0 !important; } }
+.landing-team {
+  height: 65vh; }
+  .landing-team .title h1, .landing .outer-flex-container .title-container .landing-team .title h1, .landing-team .title .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container .title h1 {
+    margin-top: 20px;
+    font-size: 100px; }
+  .landing-team .title .inner-text-container {
+    width: 65%; }
+  .landing-team .inner-nav-flex-container {
+    flex: 1; }
+  .landing-team .title {
+    flex: 5; }
 
 .mentors2-container {
   background-image: url("../assets/images/team-mentors.jpg"); }
 
 .partners-container {
   background-image: url("../assets/images/team-partners.jpg"); }
+
+@media (max-width: 900px) {
+  .landing-team .title h1, .landing .outer-flex-container .title-container .landing-team .title h1, .landing-team .title .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container .title h1 {
+    font-size: 80px; }
+  .landing-team .inner-text-container p {
+    font-size: 13px; }
+
+  .block-section p {
+    font-size: 13px; } }
+@media (max-width: 500px) {
+  .landing-team {
+    height: 80vh; }
+    .landing-team .title h1, .landing .outer-flex-container .title-container .landing-team .title h1, .landing-team .title .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container .title h1 {
+      font-size: 48px; }
+    .landing-team .title .inner-text-container {
+      width: 90%; }
+
+  .block-section .text-container {
+    order: 1; }
+  .block-section .partners-container, .block-section .mentors2-container {
+    order: 2; }
+  .block-section .space {
+    order: 3; } }
 
 /*# sourceMappingURL=team.css.map */

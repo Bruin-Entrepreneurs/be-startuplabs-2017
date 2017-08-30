@@ -1,23 +1,27 @@
 @import 'main';
-
-.landing{
-	height: 50vh;
-
+.landing-team{
+	@extend .landing;
+	height: 65vh;
 	.title{
 		h1{
 			margin-top: 20px;
-			font-size: 80px;
+			font-size: 100px;
 		}
 		.inner-text-container{
-			width: 63%;
-
+			width: 65%;
 		}
+	}
+	.inner-nav-flex-container{
+		flex: 1;
+	}
+	.title{
+		flex: 5;
 	}
 }
 
 .block-section{
 	@extend .program;
-	height: 50vh;
+	// height: 50vh;
 }
 
 .mentors2-container {
@@ -28,4 +32,51 @@
 .partners-container {
 	@extend .image-container;
 	background-image: url("../assets/images/team-partners.jpg");
+}
+
+@media (max-width: 900px){
+	.landing-team{
+		.title{
+			h1{
+				font-size: 80px;
+			}		
+		}
+		.inner-text-container{
+			p{
+				font-size: 13px;
+			}
+		}
+
+	}
+	.block-section{
+		p{
+			font-size: 13px;
+		}
+	}
+}
+
+@media (max-width: 500px){
+	.landing-team{
+		height: 80vh;
+		.title{
+			h1{
+				font-size: 48px;
+			}
+			.inner-text-container{
+				width: 90%;
+			}
+		}
+
+	}
+	.block-section{
+		.text-container{
+			order: 1;
+		}
+		.partners-container, .mentors2-container{
+			order: 2;
+		}
+		.space{
+			order: 3;
+		}
+	}
 }
