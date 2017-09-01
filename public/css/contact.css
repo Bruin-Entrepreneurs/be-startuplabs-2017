@@ -22,11 +22,13 @@
 
 .footer {
   width: 100vw;
-  height: 100px;
+  height: 120px;
+  margin: 40px 0px 0px 0px;
   overflow: hidden;
   text-align: center;
   background-color: #527EDD;
-  z-index: 3; }
+  z-index: 3;
+  line-height: 1.5; }
   .footer #navy {
     color: #072956; }
   .footer .links {
@@ -36,11 +38,24 @@
     .footer .links a {
       flex: 1; }
   .footer .logo {
-    margin: 20px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
     color: #000000; }
     .footer .logo span {
       font-size: 26px; }
+  .footer .love {
+    font-size: 16px; }
 
+@media (max-width: 500px) {
+  .footer {
+    height: 100px;
+    margin: 30px 0px 0px 0px; }
+    .footer .logo {
+      margin: 30px 0px 0px 0px;
+      color: #000000; }
+      .footer .logo span {
+        font-size: 17px; }
+      .footer .logo .love {
+        font-size: 12px; } }
 .rubik, h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1, h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3, .button, .program .text-container .button, .mentors .text-container .button, .block-section .text-container .button, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-team .outer-flex-container .inner-nav-flex-container ul li a {
   font-family: 'Rubik', sans-serif; }
 
@@ -53,11 +68,16 @@
 .blue, .landing .outer-flex-container .title-container h2, .landing-team .outer-flex-container .title-container h2 {
   color: #527EDD; }
 
-.navy, h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-team .outer-flex-container .inner-nav-flex-container ul li a {
+.navy, h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-team .outer-flex-container .inner-nav-flex-container ul li a, .landing .outer-flex-container .title .inner-text-container a, .landing-team .outer-flex-container .title .inner-text-container a {
   color: #072956; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  line-height: 1.2;
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  -moz-transition: .3s;
+  -webkit-transition: .3s; }
 
 section {
   height: 100vh;
@@ -74,9 +94,9 @@ h3, .program .text-container h3, .mentors .text-container h3, .block-section .te
   font-weight: bold; }
 
 p {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: lighter;
-  letter-spacing: .4px; }
+  letter-spacing: .2px; }
 
 .button, .program .text-container .button, .mentors .text-container .button, .block-section .text-container .button {
   background-color: #072956;
@@ -90,7 +110,14 @@ p {
   letter-spacing: .5px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  -moz-transition: .3s;
+  -webkit-transition: .3s; }
+
+.button:hover, .program .text-container .button:hover, .mentors .text-container .button:hover, .block-section .text-container .button:hover {
+  background-color: #0D53AD; }
 
 .image-container, .program .program-container, .mentors .program-container, .block-section .program-container, .mentors .mentors1-container, .mentors2-container, .partners-container {
   flex: 11;
@@ -116,12 +143,20 @@ p {
         padding: 0px 30px 0px 0px;
         align-items: center; }
         .landing .outer-flex-container .inner-nav-flex-container ul li, .landing-team .outer-flex-container .inner-nav-flex-container ul li {
+          font-size: 18px;
           list-style: none;
           overflow: hidden;
           width: fit-content; }
           .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-team .outer-flex-container .inner-nav-flex-container ul li a {
             text-decoration: none;
-            font-weight: bold; }
+            font-weight: bold;
+            transition: .3s;
+            -o-transition: .3s;
+            -ms-transition: .3s;
+            -moz-transition: .3s;
+            -webkit-transition: .3s; }
+          .landing .outer-flex-container .inner-nav-flex-container ul li a:hover, .landing-team .outer-flex-container .inner-nav-flex-container ul li a:hover {
+            color: #1271ED; }
         .landing .outer-flex-container .inner-nav-flex-container ul .box-header, .landing-team .outer-flex-container .inner-nav-flex-container ul .box-header {
           height: -webkit-fill-available;
           width: 150px;
@@ -131,7 +166,7 @@ p {
       top: 50%;
       transform: translate(0, -50%); }
       .landing .outer-flex-container .title-container h2, .landing-team .outer-flex-container .title-container h2 {
-        font: 20px 'Montserrat', sans-serif;
+        font: 24px 'Montserrat', sans-serif;
         margin: 5px 0px 2px 0px; }
         .landing .outer-flex-container .title-container h2 span, .landing-team .outer-flex-container .title-container h2 span {
           color: black; }
@@ -198,7 +233,7 @@ p {
     z-index: 2;
     content: ""; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .landing h1, .landing-team h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1 {
     font-size: 105px; }
 
@@ -214,25 +249,27 @@ p {
     font-size: 11px; }
 
   .program h3, .mentors h3, .block-section h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3 {
-    font-size: 20px; }
+    font-size: 24px; }
   .program p, .mentors p, .block-section p {
-    font-size: 8px; } }
-@media (max-width: 500px) {
+    font-size: 12px; } }
+@media (max-width: 1020px) {
   .landing .box-header, .landing-team .box-header {
     width: 0px !important; }
   .landing a, .landing-team a {
     font-size: 8px; }
   .landing .title-container h2, .landing-team .title-container h2 {
-    font-size: 11px !important; }
+    font-size: 14px !important; }
   .landing .title-container h1, .landing-team .title-container h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1 {
-    font-size: 28px; }
+    font-size: 38px; }
 
-  .about .text-container-inner {
-    width: 100% !important; }
-    .about .text-container-inner h3 {
-      font-size: 13px; }
-    .about .text-container-inner p {
-      font-size: 10px; }
+  .about {
+    height: 45vh; }
+    .about .text-container-inner {
+      width: 100% !important; }
+      .about .text-container-inner h3 {
+        font-size: 20px; }
+      .about .text-container-inner p {
+        font-size: 12px; }
 
   .program, .mentors, .block-section {
     flex-direction: column;
@@ -250,9 +287,7 @@ p {
     order: 1; }
 
   .button, .program .text-container .button, .mentors .text-container .button, .block-section .text-container .button {
-    width: 110px;
-    height: 21px;
-    font-size: 8px; }
+    font-size: 12px; }
 
   .space {
     flex: 0 !important; } }
@@ -263,10 +298,18 @@ p {
     font-size: 100px; }
   .landing-team .title .inner-text-container {
     width: 65%; }
+    .landing-team .title .inner-text-container p {
+      font-size: 18px; }
   .landing-team .inner-nav-flex-container {
     flex: 1; }
   .landing-team .title {
     flex: 5; }
+
+.block-section p {
+  font-size: 16px; }
+
+.partners {
+  text-align: center; }
 
 .mentors2-container {
   background-image: url("../assets/images/team-mentors.jpg"); }
@@ -300,9 +343,13 @@ p {
   height: 100vh; }
   .landing .outer-flex-container .title .inner-text-container, .landing-team .outer-flex-container .title .inner-text-container {
     width: 100%; }
+    .landing .outer-flex-container .title .inner-text-container .apps, .landing-team .outer-flex-container .title .inner-text-container .apps {
+      margin: 40px 0 60px 0; }
     .landing .outer-flex-container .title .inner-text-container h3, .landing-team .outer-flex-container .title .inner-text-container h3 {
       margin-bottom: 0px;
       margin-top: 5px; }
+    .landing .outer-flex-container .title .inner-text-container a, .landing-team .outer-flex-container .title .inner-text-container a {
+      font-style: none; }
 
 @media (max-width: 900px) {
   .title h1, .title .landing .outer-flex-container .title-container h1, .landing .outer-flex-container .title-container .title h1, .title .landing-team .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container .title h1 {

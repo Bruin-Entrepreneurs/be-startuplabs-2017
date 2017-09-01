@@ -2,14 +2,25 @@
 
 .landing{
 	height: 100vh;
+
 	.outer-flex-container{
 		.title{
 			.inner-text-container{
 				width: 100%;
+
+				.apps {
+					margin: 40px 0 60px 0;
+				}
+				
 				h3{
 					margin-bottom: 0px;
 					margin-top: 5px;
-				}	
+				}
+
+				a {
+					font-style: none;
+					@extend .navy;
+				}
 			}
 		}
 

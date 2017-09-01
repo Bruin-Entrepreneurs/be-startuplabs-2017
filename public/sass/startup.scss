@@ -15,10 +15,18 @@ h5 {
 
 .landing-startups{
 	@extend .landing;
+
 	.outer-flex-container{
+
 		.inner-nav-flex-container{
 			flex: 1;
+			font-size: 18px;
+
+			a:hover {
+				color: #1271ED;
+			}
 		}
+
 		.title{
 			flex: 2;
 
@@ -29,10 +37,12 @@ h5 {
 				margin-bottom: 40px;
 			}
 		}
+
 		.bottom-flex-container{
 			flex: 6;
 			display: flex;
 	 		justify-content: space-between;
+
 			.text-container{
 				flex: 5;
 				// width: 50%;
@@ -55,6 +65,7 @@ h5 {
 					@extend p;
 				}
 			}
+
 			.image-container{
 				flex: 6;
 				margin: 10px 0 10px 0;
@@ -63,6 +74,7 @@ h5 {
 				background-size: contain;
 				background-position: center;
 			}
+
 			.navy-bar{
 				background-color: #072956;
 				width: 20px;
@@ -71,6 +83,7 @@ h5 {
 		}
 	}
 }
+
 .cohorts{
 	margin-top: 10%;
 	.cohort1{
@@ -90,11 +103,13 @@ h5 {
 			flex-direction: row;
 			justify-content: space-between;
 			flex-wrap: wrap;
+
 			.profile-container{
 				width: 100%;
 				display: flex;
 				justify-content: space-between;
 				margin-top: 15px;
+
 				.width{
 					width: 48%;
 				}
@@ -105,6 +120,7 @@ h5 {
 					display: flex;
 					align-content: center;
 					justify-content: center;
+
 					.circle-image-container{
 						background-color: #072956;
 						width: 150px;
@@ -112,8 +128,10 @@ h5 {
 						border-radius: 75px;
 					}
 				}
+
 				.text-container{
 					@extend .width;
+
 					h5{
 						@extend h5;
 						margin-top: 5px;
@@ -126,6 +144,7 @@ h5 {
 			}
 		}
 	}
+
 	.cohort2{
 		@extend .cohort1;
 		.title-container{

@@ -1,10 +1,12 @@
 .footer {
   width: 100vw;
-  height: 100px;
+  height: 120px;
+  margin: 40px 0px 0px 0px;
   overflow: hidden;
   text-align: center;
   background-color: #527EDD;
-  z-index: 3; }
+  z-index: 3;
+  line-height: 1.5; }
   .footer #navy {
     color: #072956; }
   .footer .links {
@@ -14,9 +16,23 @@
     .footer .links a {
       flex: 1; }
   .footer .logo {
-    margin: 20px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
     color: #000000; }
     .footer .logo span {
       font-size: 26px; }
+  .footer .love {
+    font-size: 16px; }
+
+@media (max-width: 500px) {
+  .footer {
+    height: 100px;
+    margin: 30px 0px 0px 0px; }
+    .footer .logo {
+      margin: 30px 0px 0px 0px;
+      color: #000000; }
+      .footer .logo span {
+        font-size: 17px; }
+      .footer .logo .love {
+        font-size: 12px; } }
 
 /*# sourceMappingURL=footer.css.map */

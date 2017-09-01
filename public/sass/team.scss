@@ -1,7 +1,9 @@
 @import 'main';
-.landing-team{
+
+.landing-team {
 	@extend .landing;
 	height: 65vh;
+
 	.title{
 		h1{
 			margin-top: 20px;
@@ -9,6 +11,10 @@
 		}
 		.inner-text-container{
 			width: 65%;
+
+			p {
+				font-size: 18px;
+			}
 		}
 	}
 	.inner-nav-flex-container{
@@ -19,9 +25,15 @@
 	}
 }
 
-.block-section{
+.block-section {
 	@extend .program;
-	// height: 50vh;
+	p {
+		font-size: 16px;
+	}
+}
+
+.partners {
+	text-align: center;
 }
 
 .mentors2-container {
