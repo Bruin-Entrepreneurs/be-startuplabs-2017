@@ -42,7 +42,9 @@ router.get('/team', (req, res) => {
 router.get('/contact', (req, res) => {
 	res.render('contact')
 })
-
+router.get('/application', (req, res) => {
+	res.render('application')
+})
 
 // HTTP Requests
 

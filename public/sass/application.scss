@@ -1,0 +1,62 @@
+@import 'main';
+
+.landing-application {
+	@extend .landing;
+	
+	.outer-flex-container {
+
+		.title {
+			flex: 5;
+			display: flex;
+			flex-direction: column;
+			h4 {
+				@extend h1;
+				flex: 3;
+				font-size: 70px;
+				margin: 40px 0px 40px 10px;
+				align-self: flex-start;
+				display: flex;
+				align-content: center;
+			}
+			.button-container {
+				flex: 5;
+				align-self: flex-end;
+				margin-right: 30px;
+
+				.button {
+					position: relative;
+					width: 300px;
+					height: 65px;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.landing-application{
+		.outer-flex-container{
+			.title{
+				.button-container{
+					.button{
+						width: 200px;
+						height: 45px;
+						font-size: 15px;			
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 500px) {
+	.landing-application{
+		.outer-flex-container{
+			.title{
+				h4{
+					font-size: 42px;
+				}
+			}
+		}
+	}
+}

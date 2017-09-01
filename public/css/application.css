@@ -1,0 +1,289 @@
+.background-grid {
+  margin: 0 10% 0 10%;
+  height: 100%;
+  width: 80%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: -1; }
+
+.gray-bar {
+  height: 100%;
+  width: 100px;
+  background-color: rgba(196, 196, 196, 0.3);
+  margin: 0px 15px 0px 15px;
+  z-index: -1; }
+  .gray-bar:last-child {
+    margin-right: 0px; }
+  .gray-bar:first-child {
+    margin-left: 0px; }
+
+.footer {
+  width: 100vw;
+  height: 100px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #527EDD;
+  z-index: 3; }
+  .footer #navy {
+    color: #072956; }
+  .footer .links {
+    display: flex;
+    display: -webkit-flex;
+    letter-spacing: .5px; }
+    .footer .links a {
+      flex: 1; }
+  .footer .logo {
+    margin: 20px 0px 0px 0px;
+    color: #000000; }
+    .footer .logo span {
+      font-size: 26px; }
+
+.rubik, h1, .landing .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title h4, h3, .program .text-container h3, .mentors .text-container h3, .button, .program .text-container .button, .mentors .text-container .button, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-application .outer-flex-container .inner-nav-flex-container ul li a {
+  font-family: 'Rubik', sans-serif; }
+
+.cabin, p {
+  font-family: 'Cabin', sans-serif; }
+
+.pink, h1, .landing .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title h4 {
+  color: #F2758F; }
+
+.blue, .landing .outer-flex-container .title-container h2, .landing-application .outer-flex-container .title-container h2 {
+  color: #527EDD; }
+
+.navy, h3, .program .text-container h3, .mentors .text-container h3, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-application .outer-flex-container .inner-nav-flex-container ul li a {
+  color: #072956; }
+
+body {
+  margin: 0; }
+
+section {
+  height: 100vh;
+  width: 80%;
+  margin: 0 10% 0 10%;
+  position: relative; }
+
+h1, .landing .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title h4 {
+  margin: 4px 0px 5px 0px;
+  font-weight: bold; }
+
+h3, .program .text-container h3, .mentors .text-container h3 {
+  font-size: 38px;
+  font-weight: bold; }
+
+p {
+  font-size: 14px;
+  font-weight: lighter;
+  letter-spacing: .4px; }
+
+.button, .program .text-container .button, .mentors .text-container .button {
+  background-color: #072956;
+  color: white;
+  border: 0px;
+  width: 200px;
+  height: 45px;
+  bottom: 0px;
+  position: absolute;
+  font-size: 13px;
+  letter-spacing: .5px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.image-container, .program .program-container, .mentors .program-container, .mentors .mentors1-container {
+  flex: 11;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden; }
+
+.landing, .landing-application {
+  width: 80%; }
+  .landing .outer-flex-container, .landing-application .outer-flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+    .landing .outer-flex-container .inner-nav-flex-container, .landing-application .outer-flex-container .inner-nav-flex-container {
+      margin-top: 30px;
+      height: 70px;
+      width: 100%;
+      z-index: 1; }
+      .landing .outer-flex-container .inner-nav-flex-container ul, .landing-application .outer-flex-container .inner-nav-flex-container ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 30px 0px 0px;
+        align-items: center; }
+        .landing .outer-flex-container .inner-nav-flex-container ul li, .landing-application .outer-flex-container .inner-nav-flex-container ul li {
+          list-style: none;
+          overflow: hidden;
+          width: fit-content; }
+          .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-application .outer-flex-container .inner-nav-flex-container ul li a {
+            text-decoration: none;
+            font-weight: bold; }
+        .landing .outer-flex-container .inner-nav-flex-container ul .box-header, .landing-application .outer-flex-container .inner-nav-flex-container ul .box-header {
+          height: -webkit-fill-available;
+          width: 150px;
+          background-color: #C4C4C4; }
+    .landing .outer-flex-container .title-container, .landing-application .outer-flex-container .title-container {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%); }
+      .landing .outer-flex-container .title-container h2, .landing-application .outer-flex-container .title-container h2 {
+        font: 20px 'Montserrat', sans-serif;
+        margin: 5px 0px 2px 0px; }
+        .landing .outer-flex-container .title-container h2 span, .landing-application .outer-flex-container .title-container h2 span {
+          color: black; }
+      .landing .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title-container .title h4, .landing-application .outer-flex-container .title .title-container h4 {
+        font-size: 130px; }
+
+.about {
+  background-image: url("../assets/images/main-ucla.png");
+  height: 60vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .about .image-filter {
+    background-color: rgba(0, 0, 0, 0.58);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1; }
+  .about .text-container-outer {
+    width: 80%;
+    height: 70%;
+    color: white;
+    z-index: 2; }
+    .about .text-container-outer .text-container-inner {
+      margin: -50px 0px 0px 0px;
+      width: 77%; }
+      .about .text-container-outer .text-container-inner h3 {
+        color: white; }
+
+.program, .mentors {
+  height: 65vh;
+  display: flex;
+  justify-content: space-between; }
+  .program .margins, .mentors .margins, .program .image-container, .mentors .image-container, .program .program-container, .mentors .program-container, .mentors .mentors1-container, .program .text-container, .mentors .text-container {
+    margin: 60px 0px 20px 0px; }
+  .program .text-container, .mentors .text-container {
+    flex: 9;
+    position: relative; }
+    .program .text-container h3, .mentors .text-container h3 {
+      margin: 0px 0px 15px 0px; }
+  .program .space, .mentors .space {
+    flex: 1;
+    position: relative; }
+  .program .program-container, .mentors .program-container {
+    background-image: url("../assets/images/main-program.jpg"); }
+
+.mentors .mentors1-container {
+  background-image: url("../assets/images/main-mentors.jpg"); }
+
+.vignette {
+  position: relative;
+  height: 100%;
+  margin: 0px; }
+  .vignette:after {
+    -moz-box-shadow: inset 0 0 10em #666;
+    -webkit-box-shadow: inset 0 0 10em #666;
+    box-shadow: inset 0 0 10em #666;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    content: ""; }
+
+@media (max-width: 1200px) {
+  .landing h1, .landing-application h1, .landing .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title h4 {
+    font-size: 105px; }
+
+  .program p, .mentors p {
+    font-size: 12px; } }
+@media (max-width: 900px) {
+  .landing h1, .landing-application h1, .landing .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title h4 {
+    font-size: 75px; }
+
+  .about h3, .about .program .text-container h3, .program .text-container .about h3, .about .mentors .text-container h3, .mentors .text-container .about h3 {
+    font-size: 30px; }
+  .about p {
+    font-size: 11px; }
+
+  .program h3, .mentors h3, .program .text-container h3, .mentors .text-container h3 {
+    font-size: 20px; }
+  .program p, .mentors p {
+    font-size: 8px; } }
+@media (max-width: 500px) {
+  .landing .box-header, .landing-application .box-header {
+    width: 0px !important; }
+  .landing a, .landing-application a {
+    font-size: 8px; }
+  .landing .title-container h2, .landing-application .title-container h2 {
+    font-size: 11px !important; }
+  .landing .title-container h1, .landing-application .title-container h1, .landing .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title-container h1, .landing .title-container .landing-application .outer-flex-container .title h4, .landing-application .title-container .outer-flex-container .title h4, .landing-application .outer-flex-container .title .title-container h4 {
+    font-size: 28px; }
+
+  .about .text-container-inner {
+    width: 100% !important; }
+    .about .text-container-inner h3 {
+      font-size: 13px; }
+    .about .text-container-inner p {
+      font-size: 10px; }
+
+  .program, .mentors {
+    flex-direction: column;
+    height: 85vh; }
+    .program .margins, .mentors .margins, .program .image-container, .mentors .image-container, .program .program-container, .mentors .program-container, .mentors .mentors1-container, .program .text-container, .mentors .text-container {
+      margin: 20px 0px 10px 0px; }
+    .program h3, .mentors h3, .program .text-container h3, .mentors .text-container h3 {
+      margin-bottom: 5px; }
+
+  .mentors .mentors1-container {
+    order: 3; }
+  .mentors .space {
+    order: 2; }
+  .mentors .text-container {
+    order: 1; }
+
+  .button, .program .text-container .button, .mentors .text-container .button {
+    width: 110px;
+    height: 21px;
+    font-size: 8px; }
+
+  .space {
+    flex: 0 !important; } }
+.landing-application .outer-flex-container .title {
+  flex: 5;
+  display: flex;
+  flex-direction: column; }
+  .landing-application .outer-flex-container .title h4 {
+    flex: 3;
+    font-size: 70px;
+    margin: 40px 0px 40px 10px;
+    align-self: flex-start;
+    display: flex;
+    align-content: center; }
+  .landing-application .outer-flex-container .title .button-container {
+    flex: 5;
+    align-self: flex-end;
+    margin-right: 30px; }
+    .landing-application .outer-flex-container .title .button-container .button {
+      position: relative;
+      width: 300px;
+      height: 65px;
+      font-size: 18px; }
+
+@media (max-width: 900px) {
+  .landing-application .outer-flex-container .title .button-container .button {
+    width: 200px;
+    height: 45px;
+    font-size: 15px; } }
+@media (max-width: 500px) {
+  .landing-application .outer-flex-container .title h4 {
+    font-size: 42px; } }
+
+/*# sourceMappingURL=application.css.map */
