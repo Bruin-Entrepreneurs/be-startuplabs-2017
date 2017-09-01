@@ -56,7 +56,7 @@
         font-size: 17px; }
       .footer .logo .love {
         font-size: 12px; } }
-.rubik, h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1, h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3, .button, .program .text-container .button, .mentors .text-container .button, .block-section .text-container .button, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-team .outer-flex-container .inner-nav-flex-container ul li a {
+.rubik, h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1, h3, .program .text-container h3, .mentors .text-container h3, .button, .program .text-container .button, .mentors .text-container .button, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-team .outer-flex-container .inner-nav-flex-container ul li a {
   font-family: 'Rubik', sans-serif; }
 
 .cabin, p {
@@ -68,7 +68,7 @@
 .blue, .landing .outer-flex-container .title-container h2, .landing-team .outer-flex-container .title-container h2 {
   color: #527EDD; }
 
-.navy, h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-team .outer-flex-container .inner-nav-flex-container ul li a {
+.navy, h3, .program .text-container h3, .mentors .text-container h3, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-team .outer-flex-container .inner-nav-flex-container ul li a {
   color: #072956; }
 
 body {
@@ -89,7 +89,7 @@ h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-fle
   margin: 4px 0px 5px 0px;
   font-weight: bold; }
 
-h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3 {
+h3, .program .text-container h3, .mentors .text-container h3 {
   font-size: 38px;
   font-weight: bold; }
 
@@ -98,7 +98,7 @@ p {
   font-weight: lighter;
   letter-spacing: .2px; }
 
-.button, .program .text-container .button, .mentors .text-container .button, .block-section .text-container .button {
+.button, .program .text-container .button, .mentors .text-container .button {
   background-color: #072956;
   color: white;
   border: 0px;
@@ -116,14 +116,16 @@ p {
   -moz-transition: .3s;
   -webkit-transition: .3s; }
 
-.button:hover, .program .text-container .button:hover, .mentors .text-container .button:hover, .block-section .text-container .button:hover {
+.button:hover, .program .text-container .button:hover, .mentors .text-container .button:hover {
   background-color: #0D53AD; }
 
-.image-container, .program .program-container, .mentors .program-container, .block-section .program-container, .mentors .mentors1-container, .mentors2-container, .partners-container {
+.image-container, .program .program-container, .mentors .program-container, .mentors .mentors1-container, .mentors .mentors2-container {
   flex: 11;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 70%;
+  width: 80%; }
 
 .landing, .landing-team {
   width: 80%; }
@@ -197,21 +199,21 @@ p {
       .about .text-container-outer .text-container-inner h3 {
         color: white; }
 
-.program, .mentors, .block-section {
+.program, .mentors {
   height: 65vh;
   display: flex;
   justify-content: space-between; }
-  .program .margins, .mentors .margins, .block-section .margins, .program .image-container, .mentors .image-container, .block-section .image-container, .program .program-container, .mentors .program-container, .block-section .program-container, .mentors .mentors1-container, .program .mentors2-container, .mentors .mentors2-container, .block-section .mentors2-container, .program .partners-container, .mentors .partners-container, .block-section .partners-container, .program .text-container, .mentors .text-container, .block-section .text-container {
+  .program .margins, .mentors .margins, .program .image-container, .mentors .image-container, .program .program-container, .mentors .program-container, .mentors .mentors1-container, .mentors .mentors2-container, .program .text-container, .mentors .text-container {
     margin: 60px 0px 20px 0px; }
-  .program .text-container, .mentors .text-container, .block-section .text-container {
+  .program .text-container, .mentors .text-container {
     flex: 9;
     position: relative; }
-    .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3 {
+    .program .text-container h3, .mentors .text-container h3 {
       margin: 0px 0px 15px 0px; }
-  .program .space, .mentors .space, .block-section .space {
+  .program .space, .mentors .space {
     flex: 1;
     position: relative; }
-  .program .program-container, .mentors .program-container, .block-section .program-container {
+  .program .program-container, .mentors .program-container {
     background-image: url("../assets/images/main-program.jpg"); }
 
 .mentors .mentors1-container {
@@ -237,30 +239,30 @@ p {
   .landing h1, .landing-team h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1 {
     font-size: 105px; }
 
-  .program p, .mentors p, .block-section p {
+  .program p, .mentors p {
     font-size: 12px; } }
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .landing h1, .landing-team h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1 {
     font-size: 75px; }
 
-  .about h3, .about .program .text-container h3, .program .text-container .about h3, .about .mentors .text-container h3, .mentors .text-container .about h3, .about .block-section .text-container h3, .block-section .text-container .about h3 {
+  .about h3, .about .program .text-container h3, .program .text-container .about h3, .about .mentors .text-container h3, .mentors .text-container .about h3 {
     font-size: 30px; }
   .about p {
     font-size: 11px; }
 
-  .program h3, .mentors h3, .block-section h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3 {
+  .program h3, .mentors h3, .program .text-container h3, .mentors .text-container h3 {
     font-size: 24px; }
-  .program p, .mentors p, .block-section p {
+  .program p, .mentors p {
     font-size: 12px; } }
 @media (max-width: 1020px) {
   .landing .box-header, .landing-team .box-header {
     width: 0px !important; }
   .landing a, .landing-team a {
-    font-size: 8px; }
+    font-size: 15px; }
   .landing .title-container h2, .landing-team .title-container h2 {
     font-size: 14px !important; }
   .landing .title-container h1, .landing-team .title-container h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1 {
-    font-size: 38px; }
+    font-size: 60px; }
 
   .about {
     height: 45vh; }
@@ -271,12 +273,12 @@ p {
       .about .text-container-inner p {
         font-size: 12px; }
 
-  .program, .mentors, .block-section {
+  .program, .mentors {
     flex-direction: column;
     height: 85vh; }
-    .program .margins, .mentors .margins, .block-section .margins, .program .image-container, .mentors .image-container, .block-section .image-container, .program .program-container, .mentors .program-container, .block-section .program-container, .mentors .mentors1-container, .program .mentors2-container, .mentors .mentors2-container, .block-section .mentors2-container, .program .partners-container, .mentors .partners-container, .block-section .partners-container, .program .text-container, .mentors .text-container, .block-section .text-container {
+    .program .margins, .mentors .margins, .program .image-container, .mentors .image-container, .program .program-container, .mentors .program-container, .mentors .mentors1-container, .mentors .mentors2-container, .program .text-container, .mentors .text-container {
       margin: 20px 0px 10px 0px; }
-    .program h3, .mentors h3, .block-section h3, .program .text-container h3, .mentors .text-container h3, .block-section .text-container h3 {
+    .program h3, .mentors h3, .program .text-container h3, .mentors .text-container h3 {
       margin-bottom: 5px; }
 
   .mentors .mentors1-container {
@@ -286,11 +288,26 @@ p {
   .mentors .text-container {
     order: 1; }
 
-  .button, .program .text-container .button, .mentors .text-container .button, .block-section .text-container .button {
+  .button, .program .text-container .button, .mentors .text-container .button {
     font-size: 12px; }
 
   .space {
     flex: 0 !important; } }
+@media (max-width: 700px) {
+  .landing h1, .landing-team h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1 {
+    font-size: 40px; }
+  .landing a, .landing-team a {
+    font-size: 12px; }
+
+  .about h3, .about .program .text-container h3, .program .text-container .about h3, .about .mentors .text-container h3, .mentors .text-container .about h3 {
+    font-size: 30px; }
+  .about p {
+    font-size: 11px; }
+
+  .program h3, .mentors h3, .program .text-container h3, .mentors .text-container h3 {
+    font-size: 24px; }
+  .program p, .mentors p {
+    font-size: 12px; } }
 .landing-team {
   height: 65vh; }
   .landing-team .title h1, .landing .outer-flex-container .title-container .landing-team .title h1, .landing-team .title .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container .title h1 {
@@ -305,17 +322,20 @@ p {
   .landing-team .title {
     flex: 5; }
 
-.block-section p {
+.mentors p {
   font-size: 16px; }
-
-.partners {
-  text-align: center; }
-
-.mentors2-container {
+.mentors .mentors2-container {
   background-image: url("../assets/images/team-mentors.jpg"); }
 
-.partners-container {
-  background-image: url("../assets/images/team-partners.jpg"); }
+.partners {
+  text-align: center;
+  margin: 40px 0px 0px 0px; }
+  .partners h3, .partners .program .text-container h3, .program .text-container .partners h3, .partners .mentors .text-container h3, .mentors .text-container .partners h3 {
+    margin: 0px 0px -5px 0px; }
+  .partners img {
+    margin: 15px 25px 15px 25px;
+    height: auto;
+    width: 250px; }
 
 @media (max-width: 900px) {
   .landing-team .title h1, .landing .outer-flex-container .title-container .landing-team .title h1, .landing-team .title .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container .title h1 {
