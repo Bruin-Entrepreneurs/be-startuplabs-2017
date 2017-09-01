@@ -25,26 +25,37 @@
 	}
 }
 
-.block-section {
+.mentors {
 	@extend .program;
+
 	p {
 		font-size: 16px;
 	}
+
+	.mentors2-container {
+		@extend .image-container;
+		background-image: url("../assets/images/team-mentors.jpg");
+	}
 }
+
 
 .partners {
-	text-align: center;
+		text-align: center;
+		margin: 40px 0px 0px 0px;
+
+		h3 {
+			margin: 0px 0px -5px 0px;
+		}
+
+		img {
+			margin: 15px 25px 15px 25px;
+			height: auto;
+			width: 250px;
+		}
 }
 
-.mentors2-container {
-	@extend .image-container;
-	background-image: url("../assets/images/team-mentors.jpg");
-}
 
-.partners-container {
-	@extend .image-container;
-	background-image: url("../assets/images/team-partners.jpg");
-}
+
 
 @media (max-width: 900px){
 	.landing-team{

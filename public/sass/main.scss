@@ -85,6 +85,8 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
+	height: 70%;
+	width: 80%;
 }
 
 .landing {
@@ -206,7 +208,6 @@ p {
 
 	.text-container {
 		@extend .margins;
-		// width: 40%;
 		flex: 9;
 		position: relative;
 
@@ -273,7 +274,7 @@ p {
 	}
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
 	.landing{
 			h1{
 				font-size: 75px;
@@ -304,7 +305,7 @@ p {
 		}
 
 		a{
-			font-size: 8px;
+			font-size: 15px;
 		}
 
 		.title-container{
@@ -313,7 +314,7 @@ p {
 			}
 
 			h1{
-				font-size: 38px;
+				font-size: 60px;
 			}
 		}
 	}
@@ -368,5 +369,35 @@ p {
 
 	.space{
 		flex: 0 !important;
+	}
+}
+
+@media(max-width: 700px) {
+	.landing{
+		h1{
+			font-size: 40px;
+		}
+
+		a{
+			font-size: 12px;
+		}
+	}
+
+	.about{
+		h3{
+			font-size: 30px;
+		}
+		p{
+			font-size: 11px;
+		}
+	}
+
+	.program{
+		h3{
+			font-size: 24px;
+		}
+		p{
+			font-size: 12px;
+		}
 	}
 }

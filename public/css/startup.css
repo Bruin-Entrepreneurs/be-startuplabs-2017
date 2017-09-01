@@ -22,11 +22,13 @@
 
 .footer {
   width: 100vw;
-  height: 100px;
+  height: 120px;
+  margin: 40px 0px 0px 0px;
   overflow: hidden;
   text-align: center;
   background-color: #527EDD;
-  z-index: 3; }
+  z-index: 3;
+  line-height: 1.5; }
   .footer #navy {
     color: #072956; }
   .footer .links {
@@ -36,28 +38,46 @@
     .footer .links a {
       flex: 1; }
   .footer .logo {
-    margin: 20px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
     color: #000000; }
     .footer .logo span {
       font-size: 26px; }
+  .footer .love {
+    font-size: 16px; }
 
-.rubik, h1, .landing .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title h1, h3, .program .text-container h3, .mentors .text-container h3, .button, .program .text-container .button, .mentors .text-container .button, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-startups .outer-flex-container .inner-nav-flex-container ul li a, h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container h4, .cohorts .cohort1 .title-container h4, .cohorts .cohort2 .title-container h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container {
+@media (max-width: 500px) {
+  .footer {
+    height: 100px;
+    margin: 30px 0px 0px 0px; }
+    .footer .logo {
+      margin: 30px 0px 0px 0px;
+      color: #000000; }
+      .footer .logo span {
+        font-size: 17px; }
+      .footer .logo .love {
+        font-size: 12px; } }
+.rubik, h1, .landing .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title h1, h3, .program .text-container h3, .mentors .text-container h3, .button, .program .text-container .button, .mentors .text-container .button, .landing .outer-flex-container .inner-nav-flex-container ul li a, h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container h4, .cohorts .cohort1 .title-container h4, .landing-startups .outer-flex-container .inner-nav-flex-container ul li a, .landing-startups .outer-flex-container .bottom-flex-container .text-container {
   font-family: 'Rubik', sans-serif; }
 
-.cabin, p, .landing-startups .outer-flex-container .bottom-flex-container .text-container p {
+.cabin, p {
   font-family: 'Cabin', sans-serif; }
 
-.pink, h1, .landing .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title h1 {
+.pink, h1, .landing .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title h1 {
   color: #F2758F; }
 
-.blue, .landing .outer-flex-container .title-container h2, .landing-startups .outer-flex-container .title-container h2 {
+.blue, .landing .outer-flex-container .title-container h2 {
   color: #527EDD; }
 
-.navy, h3, .program .text-container h3, .mentors .text-container h3, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-startups .outer-flex-container .inner-nav-flex-container ul li a, h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container h4, .cohorts .cohort1 .title-container h4, .cohorts .cohort2 .title-container h4, h5, .landing-startups .outer-flex-container .bottom-flex-container .text-container h5, .cohorts .cohort1 .outer-profile-container .profile-container .text-container h5, .cohorts .cohort2 .outer-profile-container .profile-container .text-container h5, .landing-startups .outer-flex-container .bottom-flex-container .text-container h2 {
+.navy, h3, .program .text-container h3, .mentors .text-container h3, .landing .outer-flex-container .inner-nav-flex-container ul li a, h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container h4, .cohorts .cohort1 .title-container h4, h5, .cohorts .cohort1 .outer-profile-container .profile-container .text-container h5, .landing-startups .outer-flex-container .inner-nav-flex-container ul li a, .landing-startups .outer-flex-container .bottom-flex-container .text-container h2 {
   color: #072956; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  line-height: 1.2;
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  -moz-transition: .3s;
+  -webkit-transition: .3s; }
 
 section {
   height: 100vh;
@@ -65,7 +85,7 @@ section {
   margin: 0 10% 0 10%;
   position: relative; }
 
-h1, .landing .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title h1 {
+h1, .landing .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title h1 {
   margin: 4px 0px 5px 0px;
   font-weight: bold; }
 
@@ -73,10 +93,10 @@ h3, .program .text-container h3, .mentors .text-container h3 {
   font-size: 38px;
   font-weight: bold; }
 
-p, .landing-startups .outer-flex-container .bottom-flex-container .text-container p {
-  font-size: 14px;
+p {
+  font-size: 15px;
   font-weight: lighter;
-  letter-spacing: .4px; }
+  letter-spacing: .2px; }
 
 .button, .program .text-container .button, .mentors .text-container .button {
   background-color: #072956;
@@ -90,52 +110,69 @@ p, .landing-startups .outer-flex-container .bottom-flex-container .text-containe
   letter-spacing: .5px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  -moz-transition: .3s;
+  -webkit-transition: .3s; }
+
+.button:hover, .program .text-container .button:hover, .mentors .text-container .button:hover {
+  background-color: #0D53AD; }
 
 .image-container, .program .program-container, .mentors .program-container, .mentors .mentors1-container {
   flex: 11;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden; }
-
-.landing, .landing-startups {
+  overflow: hidden;
+  height: 70%;
   width: 80%; }
-  .landing .outer-flex-container, .landing-startups .outer-flex-container {
+
+.landing {
+  width: 80%; }
+  .landing .outer-flex-container {
     display: flex;
     flex-direction: column;
     height: 100%; }
-    .landing .outer-flex-container .inner-nav-flex-container, .landing-startups .outer-flex-container .inner-nav-flex-container {
+    .landing .outer-flex-container .inner-nav-flex-container {
       margin-top: 30px;
       height: 70px;
       width: 100%;
       z-index: 1; }
-      .landing .outer-flex-container .inner-nav-flex-container ul, .landing-startups .outer-flex-container .inner-nav-flex-container ul {
+      .landing .outer-flex-container .inner-nav-flex-container ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 0px 30px 0px 0px;
         align-items: center; }
-        .landing .outer-flex-container .inner-nav-flex-container ul li, .landing-startups .outer-flex-container .inner-nav-flex-container ul li {
+        .landing .outer-flex-container .inner-nav-flex-container ul li {
+          font-size: 18px;
           list-style: none;
           overflow: hidden;
           width: fit-content; }
-          .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-startups .outer-flex-container .inner-nav-flex-container ul li a {
+          .landing .outer-flex-container .inner-nav-flex-container ul li a {
             text-decoration: none;
-            font-weight: bold; }
-        .landing .outer-flex-container .inner-nav-flex-container ul .box-header, .landing-startups .outer-flex-container .inner-nav-flex-container ul .box-header {
+            font-weight: bold;
+            transition: .3s;
+            -o-transition: .3s;
+            -ms-transition: .3s;
+            -moz-transition: .3s;
+            -webkit-transition: .3s; }
+          .landing .outer-flex-container .inner-nav-flex-container ul li a:hover {
+            color: #1271ED; }
+        .landing .outer-flex-container .inner-nav-flex-container ul .box-header {
           height: -webkit-fill-available;
           width: 150px;
           background-color: #C4C4C4; }
-    .landing .outer-flex-container .title-container, .landing-startups .outer-flex-container .title-container {
+    .landing .outer-flex-container .title-container {
       position: absolute;
       top: 50%;
       transform: translate(0, -50%); }
-      .landing .outer-flex-container .title-container h2, .landing-startups .outer-flex-container .title-container h2 {
-        font: 20px 'Montserrat', sans-serif;
+      .landing .outer-flex-container .title-container h2 {
+        font: 24px 'Montserrat', sans-serif;
         margin: 5px 0px 2px 0px; }
-        .landing .outer-flex-container .title-container h2 span, .landing-startups .outer-flex-container .title-container h2 span {
+        .landing .outer-flex-container .title-container h2 span {
           color: black; }
-      .landing .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title-container h1 {
+      .landing .outer-flex-container .title-container h1 {
         font-size: 130px; }
 
 .about {
@@ -198,41 +235,43 @@ p, .landing-startups .outer-flex-container .bottom-flex-container .text-containe
     z-index: 2;
     content: ""; }
 
-@media (max-width: 1200px) {
-  .landing h1, .landing-startups h1, .landing .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title h1 {
+@media (max-width: 1300px) {
+  .landing h1, .landing .outer-flex-container .title-container h1, .landing .landing-startups .outer-flex-container .title h1, .landing-startups .outer-flex-container .title .landing h1 {
     font-size: 105px; }
 
-  .program p, .mentors p, .program .landing-startups .outer-flex-container .bottom-flex-container .text-container p, .landing-startups .outer-flex-container .bottom-flex-container .text-container .program p, .mentors .landing-startups .outer-flex-container .bottom-flex-container .text-container p, .landing-startups .outer-flex-container .bottom-flex-container .text-container .mentors p {
+  .program p, .mentors p {
     font-size: 12px; } }
-@media (max-width: 900px) {
-  .landing h1, .landing-startups h1, .landing .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title h1 {
+@media (max-width: 1100px) {
+  .landing h1, .landing .outer-flex-container .title-container h1, .landing .landing-startups .outer-flex-container .title h1, .landing-startups .outer-flex-container .title .landing h1 {
     font-size: 75px; }
 
   .about h3, .about .program .text-container h3, .program .text-container .about h3, .about .mentors .text-container h3, .mentors .text-container .about h3 {
     font-size: 30px; }
-  .about p, .about .landing-startups .outer-flex-container .bottom-flex-container .text-container p, .landing-startups .outer-flex-container .bottom-flex-container .text-container .about p {
+  .about p {
     font-size: 11px; }
 
   .program h3, .mentors h3, .program .text-container h3, .mentors .text-container h3 {
-    font-size: 20px; }
-  .program p, .mentors p, .program .landing-startups .outer-flex-container .bottom-flex-container .text-container p, .landing-startups .outer-flex-container .bottom-flex-container .text-container .program p, .mentors .landing-startups .outer-flex-container .bottom-flex-container .text-container p, .landing-startups .outer-flex-container .bottom-flex-container .text-container .mentors p {
-    font-size: 8px; } }
-@media (max-width: 500px) {
-  .landing .box-header, .landing-startups .box-header {
+    font-size: 24px; }
+  .program p, .mentors p {
+    font-size: 12px; } }
+@media (max-width: 1020px) {
+  .landing .box-header {
     width: 0px !important; }
-  .landing a, .landing-startups a {
-    font-size: 8px; }
-  .landing .title-container h2, .landing-startups .title-container h2 {
-    font-size: 11px !important; }
-  .landing .title-container h1, .landing-startups .title-container h1, .landing .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title-container h1, .landing .title-container .landing-startups .outer-flex-container .title h1, .landing-startups .title-container .outer-flex-container .title h1 {
-    font-size: 28px; }
+  .landing a {
+    font-size: 15px; }
+  .landing .title-container h2 {
+    font-size: 14px !important; }
+  .landing .title-container h1, .landing .outer-flex-container .title-container h1, .landing .title-container .landing-startups .outer-flex-container .title h1, .landing-startups .outer-flex-container .title .landing .title-container h1 {
+    font-size: 60px; }
 
-  .about .text-container-inner {
-    width: 100% !important; }
-    .about .text-container-inner h3 {
-      font-size: 13px; }
-    .about .text-container-inner p, .about .text-container-inner .landing-startups .outer-flex-container .bottom-flex-container .text-container p, .landing-startups .outer-flex-container .bottom-flex-container .text-container .about .text-container-inner p {
-      font-size: 10px; }
+  .about {
+    height: 45vh; }
+    .about .text-container-inner {
+      width: 100% !important; }
+      .about .text-container-inner h3 {
+        font-size: 20px; }
+      .about .text-container-inner p {
+        font-size: 12px; }
 
   .program, .mentors {
     flex-direction: column;
@@ -250,21 +289,62 @@ p, .landing-startups .outer-flex-container .bottom-flex-container .text-containe
     order: 1; }
 
   .button, .program .text-container .button, .mentors .text-container .button {
-    width: 110px;
-    height: 21px;
-    font-size: 8px; }
+    font-size: 12px; }
 
   .space {
     flex: 0 !important; } }
-h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container h4, .cohorts .cohort1 .title-container h4, .cohorts .cohort2 .title-container h4 {
+@media (max-width: 700px) {
+  .landing h1, .landing .outer-flex-container .title-container h1, .landing .landing-startups .outer-flex-container .title h1, .landing-startups .outer-flex-container .title .landing h1 {
+    font-size: 40px; }
+  .landing a {
+    font-size: 12px; }
+
+  .about h3, .about .program .text-container h3, .program .text-container .about h3, .about .mentors .text-container h3, .mentors .text-container .about h3 {
+    font-size: 30px; }
+  .about p {
+    font-size: 11px; }
+
+  .program h3, .mentors h3, .program .text-container h3, .mentors .text-container h3 {
+    font-size: 24px; }
+  .program p, .mentors p {
+    font-size: 12px; } }
+h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container h4, .cohorts .cohort1 .title-container h4 {
   font-size: 39px; }
 
-h5, .landing-startups .outer-flex-container .bottom-flex-container .text-container h5, .cohorts .cohort1 .outer-profile-container .profile-container .text-container h5, .cohorts .cohort2 .outer-profile-container .profile-container .text-container h5 {
+h5, .cohorts .cohort1 .outer-profile-container .profile-container .text-container h5 {
   font-size: 16px;
   margin-bottom: 10px; }
 
 .landing-startups .outer-flex-container .inner-nav-flex-container {
-  flex: 1; }
+  margin-top: 30px;
+  height: 70px;
+  width: 100%;
+  z-index: 1; }
+  .landing-startups .outer-flex-container .inner-nav-flex-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 30px 0px 0px;
+    align-items: center; }
+    .landing-startups .outer-flex-container .inner-nav-flex-container ul li {
+      font-size: 18px;
+      list-style: none;
+      overflow: hidden;
+      width: fit-content; }
+      .landing-startups .outer-flex-container .inner-nav-flex-container ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        transition: .3s;
+        -o-transition: .3s;
+        -ms-transition: .3s;
+        -moz-transition: .3s;
+        -webkit-transition: .3s; }
+      .landing-startups .outer-flex-container .inner-nav-flex-container ul li a:hover {
+        color: #1271ED; }
+    .landing-startups .outer-flex-container .inner-nav-flex-container ul .box-header {
+      height: -webkit-fill-available;
+      width: 150px;
+      background-color: #C4C4C4; }
 .landing-startups .outer-flex-container .title {
   flex: 2; }
   .landing-startups .outer-flex-container .title h1 {
@@ -291,76 +371,69 @@ h5, .landing-startups .outer-flex-container .bottom-flex-container .text-contain
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center; }
+    .landing-startups .outer-flex-container .bottom-flex-container .image-container img, .landing-startups .outer-flex-container .bottom-flex-container .program .program-container img, .program .landing-startups .outer-flex-container .bottom-flex-container .program-container img, .landing-startups .outer-flex-container .bottom-flex-container .mentors .program-container img, .mentors .landing-startups .outer-flex-container .bottom-flex-container .program-container img, .landing-startups .outer-flex-container .bottom-flex-container .mentors .mentors1-container img, .mentors .landing-startups .outer-flex-container .bottom-flex-container .mentors1-container img {
+      width: 200px;
+      height: auto; }
   .landing-startups .outer-flex-container .bottom-flex-container .navy-bar {
     background-color: #072956;
     width: 20px;
     margin-right: 10px; }
 
 .cohorts {
-  margin-top: 10%; }
-  .cohorts .cohort1, .cohorts .cohort2 {
+  margin-top: 2%;
+  height: auto; }
+  .cohorts .cohort1 {
     display: flex;
     flex-direction: column; }
-    .cohorts .cohort1 .title-container, .cohorts .cohort2 .title-container {
+    .cohorts .cohort1 .title-container {
       width: 100%; }
-      .cohorts .cohort1 .title-container .landing-startups .outer-flex-container .bottom-flex-container .text-container h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container .cohorts .cohort1 .title-container h4, .cohorts .cohort2 .title-container .landing-startups .outer-flex-container .bottom-flex-container .text-container h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container .cohorts .cohort2 .title-container h4, .cohorts .cohort1 .title-container h4, .cohorts .cohort2 .title-container h4 {
+      .cohorts .cohort1 .title-container .landing-startups .outer-flex-container .bottom-flex-container .text-container h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container .cohorts .cohort1 .title-container h4, .cohorts .cohort1 .title-container h4 {
         width: 100%;
         margin: 10px 0px 0px 0px; }
-    .cohorts .cohort1 .outer-profile-container, .cohorts .cohort2 .outer-profile-container {
+    .cohorts .cohort1 .outer-profile-container .profile-container {
+      width: 100%;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap; }
-      .cohorts .cohort1 .outer-profile-container .profile-container, .cohorts .cohort2 .outer-profile-container .profile-container {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 15px; }
-        .cohorts .cohort1 .outer-profile-container .profile-container .width, .cohorts .cohort2 .outer-profile-container .profile-container .width, .cohorts .cohort1 .outer-profile-container .profile-container .rect-image-container, .cohorts .cohort2 .outer-profile-container .profile-container .rect-image-container, .cohorts .cohort1 .outer-profile-container .profile-container .text-container, .cohorts .cohort2 .outer-profile-container .profile-container .text-container {
-          width: 48%; }
-        .cohorts .cohort1 .outer-profile-container .profile-container .rect-image-container, .cohorts .cohort2 .outer-profile-container .profile-container .rect-image-container {
-          height: 150px;
-          background-color: #C4C4C4;
-          display: flex;
-          align-content: center;
-          justify-content: center; }
-          .cohorts .cohort1 .outer-profile-container .profile-container .rect-image-container .circle-image-container, .cohorts .cohort2 .outer-profile-container .profile-container .rect-image-container .circle-image-container {
-            background-color: #072956;
-            width: 150px;
-            height: 150px;
-            border-radius: 75px; }
-        .cohorts .cohort1 .outer-profile-container .profile-container .text-container h5, .cohorts .cohort2 .outer-profile-container .profile-container .text-container h5 {
+      justify-content: left;
+      margin-top: 15px; }
+      .cohorts .cohort1 .outer-profile-container .profile-container .rect-image-container {
+        margin: 0px 40px 0px 0px;
+        width: 160px;
+        text-align: center;
+        vertical-align: middle; }
+        .cohorts .cohort1 .outer-profile-container .profile-container .rect-image-container img {
+          width: 120px;
+          height: auto; }
+      .cohorts .cohort1 .outer-profile-container .profile-container .text-container {
+        width: 70%;
+        max-width: 850px; }
+        .cohorts .cohort1 .outer-profile-container .profile-container .text-container h5 {
           margin-top: 5px; }
-        .cohorts .cohort1 .outer-profile-container .profile-container .text-container p, .cohorts .cohort2 .outer-profile-container .profile-container .text-container p {
+        .cohorts .cohort1 .outer-profile-container .profile-container .text-container p {
           font-size: 13px;
           font-weight: lighter; }
-  .cohorts .cohort2 .title-container {
-    margin-top: 25px; }
 
 @media (max-width: 1200px) {
-  .landing-startups h1, .landing .outer-flex-container .title-container .landing-startups h1, .landing-startups .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title h1 {
+  .landing-startups h1, .landing-startups .landing .outer-flex-container .title-container h1, .landing .outer-flex-container .title-container .landing-startups h1, .landing-startups .outer-flex-container .title h1 {
     font-size: 105px; }
 
-  .cohorts {
-    height: auto; }
-    .cohorts .cohort1 .outer-profile-container .profile-container .text-container p, .cohorts .cohort2 .outer-profile-container .profile-container .text-container p {
-      font-size: 11px; } }
+  .cohorts .cohort1 .outer-profile-container .profile-container .text-container p {
+    font-size: 14px; } }
 @media (max-width: 900px) {
-  .landing-startups .title h1, .landing .outer-flex-container .title-container .landing-startups .title h1, .landing-startups .title .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title h1 {
+  .landing-startups .title h1, .landing-startups .title .landing .outer-flex-container .title-container h1, .landing .outer-flex-container .title-container .landing-startups .title h1, .landing-startups .outer-flex-container .title h1 {
     font-size: 70px; }
   .landing-startups .bottom-flex-container .text-container h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container h4 {
     margin-bottom: 15px;
     font-size: 30px; }
-  .landing-startups .bottom-flex-container .text-container p, .landing-startups .outer-flex-container .bottom-flex-container .text-container p {
+  .landing-startups .bottom-flex-container .text-container p {
     font-size: 11px; } }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .landing-startups {
     height: 150vh; }
     .landing-startups .box-header {
       width: 0px !important; }
     .landing-startups a {
-      font-size: 8px; }
-    .landing-startups .title h1, .landing .outer-flex-container .title-container .landing-startups .title h1, .landing-startups .title .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title h1 {
+      font-size: 12px; }
+    .landing-startups .title h1, .landing-startups .title .landing .outer-flex-container .title-container h1, .landing .outer-flex-container .title-container .landing-startups .title h1, .landing-startups .outer-flex-container .title h1 {
       font-size: 28px; }
     .landing-startups .bottom-flex-container {
       flex-direction: column;
@@ -372,9 +445,9 @@ h5, .landing-startups .outer-flex-container .bottom-flex-container .text-contain
         .landing-startups .bottom-flex-container .text-container h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container h4 {
           font-size: 25px;
           margin-bottom: 10px; }
-        .landing-startups .bottom-flex-container .text-container p, .landing-startups .outer-flex-container .bottom-flex-container .text-container p {
-          font-size: 11px; }
-        .landing-startups .bottom-flex-container .text-container h5, .landing-startups .outer-flex-container .bottom-flex-container .text-container h5, .landing-startups .bottom-flex-container .cohorts .cohort1 .outer-profile-container .profile-container .text-container h5, .cohorts .cohort1 .outer-profile-container .profile-container .landing-startups .bottom-flex-container .text-container h5, .landing-startups .bottom-flex-container .cohorts .cohort2 .outer-profile-container .profile-container .text-container h5, .cohorts .cohort2 .outer-profile-container .profile-container .landing-startups .bottom-flex-container .text-container h5 {
+        .landing-startups .bottom-flex-container .text-container p {
+          font-size: 12px; }
+        .landing-startups .bottom-flex-container .text-container h5, .landing-startups .bottom-flex-container .cohorts .cohort1 .outer-profile-container .profile-container .text-container h5, .cohorts .cohort1 .outer-profile-container .profile-container .landing-startups .bottom-flex-container .text-container h5 {
           margin-top: 10px; }
       .landing-startups .bottom-flex-container .navy-bar {
         width: 0px; }
@@ -383,7 +456,7 @@ h5, .landing-startups .outer-flex-container .bottom-flex-container .text-contain
 
   .cohorts {
     height: auto; }
-    .cohorts .cohort1 .title-container .landing-startups .outer-flex-container .bottom-flex-container .text-container h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container .cohorts .cohort1 .title-container h4, .cohorts .cohort2 .title-container .landing-startups .outer-flex-container .bottom-flex-container .text-container h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container .cohorts .cohort2 .title-container h4, .cohorts .cohort1 .title-container h4, .cohorts .cohort2 .title-container h4 {
+    .cohorts .cohort1 .title-container .landing-startups .outer-flex-container .bottom-flex-container .text-container h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container .cohorts .cohort1 .title-container h4, .cohorts .cohort1 .title-container h4 {
       font-size: 45px; }
     .cohorts .outer-profile-container .profile-container {
       width: 100% !important;
