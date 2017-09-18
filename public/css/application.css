@@ -22,11 +22,15 @@
 
 .footer {
   width: 100vw;
-  height: 100px;
+  height: 120px;
+  margin: 40px 0px 0px 0px;
   overflow: hidden;
   text-align: center;
   background-color: #527EDD;
-  z-index: 3; }
+  z-index: 3;
+  line-height: 1.5; }
+  .footer a, .footer a:link, .footer a:active, .footer a:visited, .footer a:hover {
+    text-decoration: none; }
   .footer #navy {
     color: #072956; }
   .footer .links {
@@ -36,11 +40,24 @@
     .footer .links a {
       flex: 1; }
   .footer .logo {
-    margin: 20px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
     color: #000000; }
     .footer .logo span {
       font-size: 26px; }
+  .footer .love {
+    font-size: 16px; }
 
+@media (max-width: 500px) {
+  .footer {
+    height: 100px;
+    margin: 30px 0px 0px 0px; }
+    .footer .logo {
+      margin: 30px 0px 0px 0px;
+      color: #000000; }
+      .footer .logo span {
+        font-size: 17px; }
+      .footer .logo .love {
+        font-size: 12px; } }
 .rubik, h1, .landing .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title h4, h3, .program .text-container h3, .mentors .text-container h3, .button, .program .text-container .button, .mentors .text-container .button, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-application .outer-flex-container .inner-nav-flex-container ul li a {
   font-family: 'Rubik', sans-serif; }
 
@@ -57,7 +74,12 @@
   color: #072956; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  line-height: 1.2;
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  -moz-transition: .3s;
+  -webkit-transition: .3s; }
 
 section {
   height: 100vh;
@@ -74,9 +96,9 @@ h3, .program .text-container h3, .mentors .text-container h3 {
   font-weight: bold; }
 
 p {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: lighter;
-  letter-spacing: .4px; }
+  letter-spacing: .2px; }
 
 .button, .program .text-container .button, .mentors .text-container .button {
   background-color: #072956;
@@ -90,13 +112,22 @@ p {
   letter-spacing: .5px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  -moz-transition: .3s;
+  -webkit-transition: .3s; }
+
+.button:hover, .program .text-container .button:hover, .mentors .text-container .button:hover {
+  background-color: #0D53AD; }
 
 .image-container, .program .program-container, .mentors .program-container, .mentors .mentors1-container {
   flex: 11;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 75%;
+  width: 80%; }
 
 .landing, .landing-application {
   width: 80%; }
@@ -109,6 +140,10 @@ p {
       height: 70px;
       width: 100%;
       z-index: 1; }
+      .landing .outer-flex-container .inner-nav-flex-container img, .landing-application .outer-flex-container .inner-nav-flex-container img {
+        margin: 0 -3% 0 6%;
+        width: 65px;
+        height: auto; }
       .landing .outer-flex-container .inner-nav-flex-container ul, .landing-application .outer-flex-container .inner-nav-flex-container ul {
         display: flex;
         flex-direction: row;
@@ -116,12 +151,20 @@ p {
         padding: 0px 30px 0px 0px;
         align-items: center; }
         .landing .outer-flex-container .inner-nav-flex-container ul li, .landing-application .outer-flex-container .inner-nav-flex-container ul li {
+          font-size: 18px;
           list-style: none;
           overflow: hidden;
           width: fit-content; }
           .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-application .outer-flex-container .inner-nav-flex-container ul li a {
             text-decoration: none;
-            font-weight: bold; }
+            font-weight: bold;
+            transition: .3s;
+            -o-transition: .3s;
+            -ms-transition: .3s;
+            -moz-transition: .3s;
+            -webkit-transition: .3s; }
+          .landing .outer-flex-container .inner-nav-flex-container ul li a:hover, .landing-application .outer-flex-container .inner-nav-flex-container ul li a:hover {
+            color: #1271ED; }
         .landing .outer-flex-container .inner-nav-flex-container ul .box-header, .landing-application .outer-flex-container .inner-nav-flex-container ul .box-header {
           height: -webkit-fill-available;
           width: 150px;
@@ -131,7 +174,7 @@ p {
       top: 50%;
       transform: translate(0, -50%); }
       .landing .outer-flex-container .title-container h2, .landing-application .outer-flex-container .title-container h2 {
-        font: 20px 'Montserrat', sans-serif;
+        font: 24px 'Montserrat', sans-serif;
         margin: 5px 0px 2px 0px; }
         .landing .outer-flex-container .title-container h2 span, .landing-application .outer-flex-container .title-container h2 span {
           color: black; }
@@ -140,7 +183,7 @@ p {
 
 .about {
   background-image: url("../assets/images/main-ucla.png");
-  height: 60vh;
+  height: 65vh;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -198,41 +241,39 @@ p {
     z-index: 2;
     content: ""; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .landing h1, .landing-application h1, .landing .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title h4 {
     font-size: 105px; }
 
   .program p, .mentors p {
-    font-size: 12px; } }
-@media (max-width: 900px) {
+    font-size: 14px; } }
+@media (max-width: 1100px) {
   .landing h1, .landing-application h1, .landing .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title h4 {
     font-size: 75px; }
 
   .about h3, .about .program .text-container h3, .program .text-container .about h3, .about .mentors .text-container h3, .mentors .text-container .about h3 {
-    font-size: 30px; }
-  .about p {
-    font-size: 11px; }
+    font-size: 35px; }
 
   .program h3, .mentors h3, .program .text-container h3, .mentors .text-container h3 {
-    font-size: 20px; }
+    font-size: 24px; }
   .program p, .mentors p {
-    font-size: 8px; } }
-@media (max-width: 500px) {
+    font-size: 13px; } }
+@media (max-width: 1020px) {
   .landing .box-header, .landing-application .box-header {
     width: 0px !important; }
   .landing a, .landing-application a {
-    font-size: 8px; }
+    font-size: 15px; }
   .landing .title-container h2, .landing-application .title-container h2 {
-    font-size: 11px !important; }
+    font-size: 14px !important; }
   .landing .title-container h1, .landing-application .title-container h1, .landing .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title-container h1, .landing .title-container .landing-application .outer-flex-container .title h4, .landing-application .title-container .outer-flex-container .title h4, .landing-application .outer-flex-container .title .title-container h4 {
-    font-size: 28px; }
+    font-size: 60px; }
 
-  .about .text-container-inner {
-    width: 100% !important; }
-    .about .text-container-inner h3 {
-      font-size: 13px; }
-    .about .text-container-inner p {
-      font-size: 10px; }
+  .about {
+    height: 55vh; }
+    .about .text-container-inner {
+      width: 100% !important; }
+      .about .text-container-inner h3 {
+        font-size: 30px; }
 
   .program, .mentors {
     flex-direction: column;
@@ -250,12 +291,33 @@ p {
     order: 1; }
 
   .button, .program .text-container .button, .mentors .text-container .button {
-    width: 110px;
-    height: 21px;
-    font-size: 8px; }
+    font-size: 12px; }
 
   .space {
     flex: 0 !important; } }
+@media (max-width: 700px) {
+  .landing h1, .landing-application h1, .landing .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title h4 {
+    font-size: 40px; }
+  .landing a, .landing-application a {
+    font-size: 12px; }
+
+  .about {
+    height: 77vh; }
+    .about h3, .about .program .text-container h3, .program .text-container .about h3, .about .mentors .text-container h3, .mentors .text-container .about h3 {
+      font-size: 30px; }
+    .about p {
+      font-size: 14px; }
+
+  .program h3, .mentors h3, .program .text-container h3, .mentors .text-container h3 {
+    font-size: 24px; }
+  .program p, .mentors p {
+    font-size: 13px; }
+
+  .image-container, .program .program-container, .mentors .program-container, .mentors .mentors1-container {
+    height: 75%;
+    width: 100%; } }
+.landing-application a, .landing-application a:link, .landing-application a:active, .landing-application a:visited, .landing-application a:hover {
+  text-decoration: none; }
 .landing-application .outer-flex-container .title {
   flex: 5;
   display: flex;

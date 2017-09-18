@@ -2,6 +2,10 @@
 
 .landing-application {
 	@extend .landing;
+
+  a, a:link, a:active, a:visited, a:hover {
+	text-decoration: none;
+  }
 	
 	.outer-flex-container {
 

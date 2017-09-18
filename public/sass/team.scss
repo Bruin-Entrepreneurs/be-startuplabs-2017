@@ -6,7 +6,7 @@
 
 	.title{
 		h1{
-			margin-top: 20px;
+			margin-top: 40px;
 			font-size: 100px;
 		}
 		.inner-text-container{
@@ -25,16 +25,56 @@
 	}
 }
 
-.mentors {
-	@extend .program;
+.mentor-blurb {
+	height: 40vh;
+	margin-top: 4%;
+	display: flex;
+	justify-content: space-between;
 
 	p {
 		font-size: 16px;
 	}
 
-	.mentors2-container {
-		@extend .image-container;
-		background-image: url("../assets/images/team-mentors.jpg");
+	.text-container {
+		flex: 9;
+		position: relative;
+
+		h3{
+			@extend h3;
+			margin: 0px 0px 15px 0px;
+		}
+
+		.button{
+			@extend .button;
+		}
+	}
+
+	.space{
+		flex: 1;
+		position: relative;
+	}
+}
+
+.mentor-profiles {
+	height: auto;
+	margin: -40px 3% 0 6%;
+
+	figure {
+		text-align: center;
+		display: inline-block;
+		margin: 5px 1% 20px 1%;
+		max-width: 180px;
+
+		img {
+			width: 120px;
+			height: auto;
+			margin: 0px 0px 8px 0px;
+		}
+
+		figcaption {
+			@extend .cabin;
+			font-size: 14px;
+		}
 	}
 }
 
@@ -55,8 +95,6 @@
 }
 
 
-
-
 @media (max-width: 900px){
 	.landing-team{
 		.title{
@@ -74,6 +112,17 @@
 	.block-section{
 		p{
 			font-size: 13px;
+		}
+	}
+
+	.mentor-profiles {
+		figure {
+			margin: 5px 1% 20px 1%;
+			max-width: 160px;
+
+			img {
+				width: 80px;
+			}
 		}
 	}
 }
@@ -100,6 +149,19 @@
 		}
 		.space{
 			order: 3;
+		}
+	}
+
+	.mentor-profiles {
+		text-align: center;
+		
+		figure {
+			margin: 5px 1% 20px 1%;
+			max-width: 160px;
+
+			img {
+				width: 80px;
+			}
 		}
 	}
 }

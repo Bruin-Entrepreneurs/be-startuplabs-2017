@@ -17,6 +17,7 @@ h5 {
 	height: auto;
 	min-height: 100vh;
 	@extend .landing;
+	
 	.outer-flex-container{
 		.inner-nav-flex-container{
 			// margin-top: 30px;
@@ -65,10 +66,10 @@ h5 {
 		.title{
 			flex: 2;
 
-			h1{
+			h1 {
 				@extend h1;
 				font-size: 80px;
-				margin-top: 20px;
+				margin-top: 40px;
 				margin-bottom: 40px;
 			}
 		}
@@ -181,27 +182,20 @@ h5 {
 					}
 
 					p{
-						font-size: 13px;
+						font-size: 14px;
 						font-weight: lighter;
 					}
 				}
 			}
 		}
 	}
-
-	// .cohort2{
-	// 	@extend .cohort1;
-	// 	.title-container{
-	// 		margin-top: 25px;
-	// 	}
-	// }
 }
 
 
 @media (max-width: 1200px) {
 	.landing-startups{
 			h1{
-				font-size: 105px;
+				font-size: 80px;
 			}
 	}
 
@@ -257,6 +251,7 @@ h5 {
 		.title{
 			h1{
 				font-size: 28px;
+				margin: 10px 0px 10px 0px;
 			}
 		}
 

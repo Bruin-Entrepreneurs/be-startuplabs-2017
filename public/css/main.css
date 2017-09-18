@@ -29,6 +29,8 @@
   background-color: #527EDD;
   z-index: 3;
   line-height: 1.5; }
+  .footer a, .footer a:link, .footer a:active, .footer a:visited, .footer a:hover {
+    text-decoration: none; }
   .footer #navy {
     color: #072956; }
   .footer .links {
@@ -124,7 +126,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  height: 70%;
+  height: 75%;
   width: 80%; }
 
 .landing {
@@ -138,6 +140,10 @@ p {
       height: 70px;
       width: 100%;
       z-index: 1; }
+      .landing .outer-flex-container .inner-nav-flex-container img {
+        margin: 0 -3% 0 6%;
+        width: 65px;
+        height: auto; }
       .landing .outer-flex-container .inner-nav-flex-container ul {
         display: flex;
         flex-direction: row;
@@ -177,7 +183,7 @@ p {
 
 .about {
   background-image: url("../assets/images/main-ucla.png");
-  height: 60vh;
+  height: 65vh;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -240,20 +246,18 @@ p {
     font-size: 105px; }
 
   .program p, .mentors p {
-    font-size: 12px; } }
+    font-size: 14px; } }
 @media (max-width: 1100px) {
   .landing h1, .landing .outer-flex-container .title-container h1 {
     font-size: 75px; }
 
   .about h3, .about .program .text-container h3, .program .text-container .about h3, .about .mentors .text-container h3, .mentors .text-container .about h3 {
-    font-size: 30px; }
-  .about p {
-    font-size: 11px; }
+    font-size: 35px; }
 
   .program h3, .mentors h3, .program .text-container h3, .mentors .text-container h3 {
     font-size: 24px; }
   .program p, .mentors p {
-    font-size: 12px; } }
+    font-size: 13px; } }
 @media (max-width: 1020px) {
   .landing .box-header {
     width: 0px !important; }
@@ -265,13 +269,11 @@ p {
     font-size: 60px; }
 
   .about {
-    height: 45vh; }
+    height: 55vh; }
     .about .text-container-inner {
       width: 100% !important; }
       .about .text-container-inner h3 {
-        font-size: 20px; }
-      .about .text-container-inner p {
-        font-size: 12px; }
+        font-size: 30px; }
 
   .program, .mentors {
     flex-direction: column;
@@ -299,14 +301,20 @@ p {
   .landing a {
     font-size: 12px; }
 
-  .about h3, .about .program .text-container h3, .program .text-container .about h3, .about .mentors .text-container h3, .mentors .text-container .about h3 {
-    font-size: 30px; }
-  .about p {
-    font-size: 11px; }
+  .about {
+    height: 77vh; }
+    .about h3, .about .program .text-container h3, .program .text-container .about h3, .about .mentors .text-container h3, .mentors .text-container .about h3 {
+      font-size: 30px; }
+    .about p {
+      font-size: 14px; }
 
   .program h3, .mentors h3, .program .text-container h3, .mentors .text-container h3 {
     font-size: 24px; }
   .program p, .mentors p {
-    font-size: 12px; } }
+    font-size: 13px; }
+
+  .image-container, .program .program-container, .mentors .program-container, .mentors .mentors1-container {
+    height: 75%;
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

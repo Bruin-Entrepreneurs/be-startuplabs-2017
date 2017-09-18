@@ -7,6 +7,8 @@
   background-color: #527EDD;
   z-index: 3;
   line-height: 1.5; }
+  .footer a, .footer a:link, .footer a:active, .footer a:visited, .footer a:hover {
+    text-decoration: none; }
   .footer #navy {
     color: #072956; }
   .footer .links {

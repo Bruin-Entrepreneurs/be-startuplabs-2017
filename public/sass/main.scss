@@ -85,7 +85,7 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
-	height: 70%;
+	height: 75%;
 	width: 80%;
 }
 
@@ -102,6 +102,12 @@ p {
 			height: 70px;
 			width: 100%;
 			z-index: 1;
+
+			img {
+				margin: 0 -3% 0 6%;
+				width: 65px;
+				height: auto;
+			}
 
 			ul{
 				display: flex;
@@ -165,7 +171,7 @@ p {
 
 .about{
 	background-image: url("../assets/images/main-ucla.png");
-	height: 60vh;
+	height: 65vh;
 	background-size: cover;
 	display: flex;
 	justify-content: center;
@@ -269,7 +275,7 @@ p {
 	}
 	.program{
 		p{
-			font-size: 12px;
+			font-size: 14px;
 		}
 	}
 }
@@ -282,10 +288,7 @@ p {
 	}
 	.about{
 		h3{
-			font-size: 30px;
-		}
-		p{
-			font-size: 11px;
+			font-size: 35px;
 		}
 	}
 	.program{
@@ -293,7 +296,7 @@ p {
 			font-size: 24px;
 		}
 		p{
-			font-size: 12px;
+			font-size: 13px;
 		}
 	}
 }
@@ -320,16 +323,12 @@ p {
 	}
 
 	.about{
-		height: 45vh;
+		height: 55vh;
 		.text-container-inner{
 			width: 100% !important;
 
 			h3{
-				font-size: 20px;
-			}
-
-			p{
-				font-size: 12px;
+				font-size: 30px;
 			}
 		}	
 	}
@@ -384,11 +383,12 @@ p {
 	}
 
 	.about{
+		height: 77vh;
 		h3{
 			font-size: 30px;
 		}
-		p{
-			font-size: 11px;
+		p {
+			font-size: 14px;
 		}
 	}
 
@@ -397,7 +397,12 @@ p {
 			font-size: 24px;
 		}
 		p{
-			font-size: 12px;
+			font-size: 13px;
 		}
+	}
+
+	.image-container {
+		height: 75%;
+		width: 100%;
 	}
 }
