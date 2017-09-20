@@ -316,6 +316,17 @@ p {
   .image-container, .program .program-container, .mentors .program-container, .mentors .mentors1-container {
     height: 75%;
     width: 100%; } }
+@media (max-width: 500px) {
+  .landing li a, .landing-startups li a {
+    font-size: 8px; }
+
+  .about p {
+    font-size: 12px; }
+
+  .text-container .button, .program .text-container .button, .mentors .text-container .button {
+    height: 30px;
+    width: 150px;
+    font-size: 10px; } }
 h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container h4, .cohorts .cohort1 .title-container h4 {
   font-size: 39px; }
 
@@ -352,7 +363,9 @@ h5, .cohorts .cohort1 .outer-profile-container .profile-container .text-containe
       width: 150px;
       background-color: #C4C4C4; }
   .landing-startups .outer-flex-container .title {
-    flex: 2; }
+    flex: 2;
+    display: flex;
+    align-items: center; }
     .landing-startups .outer-flex-container .title h1 {
       font-size: 80px;
       margin-top: 40px;
@@ -438,8 +451,8 @@ h5, .cohorts .cohort1 .outer-profile-container .profile-container .text-containe
     height: 150vh; }
     .landing-startups .box-header {
       width: 0px !important; }
-    .landing-startups a {
-      font-size: 12px; }
+    .landing-startups li a {
+      font-size: 10px; }
     .landing-startups .title h1, .landing .outer-flex-container .title-container .landing-startups .title h1, .landing-startups .title .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title h1 {
       font-size: 28px;
       margin: 10px 0px 10px 0px; }
@@ -460,7 +473,7 @@ h5, .cohorts .cohort1 .outer-profile-container .profile-container .text-containe
       .landing-startups .bottom-flex-container .navy-bar {
         width: 0px; }
       .landing-startups .bottom-flex-container .image-container, .landing-startups .bottom-flex-container .program .program-container, .program .landing-startups .bottom-flex-container .program-container, .landing-startups .bottom-flex-container .mentors .program-container, .mentors .landing-startups .bottom-flex-container .program-container, .landing-startups .bottom-flex-container .mentors .mentors1-container, .mentors .landing-startups .bottom-flex-container .mentors1-container {
-        flex: 3 !important; }
+        flex: 2 !important; }
 
   .cohorts {
     height: auto; }
@@ -473,5 +486,11 @@ h5, .cohorts .cohort1 .outer-profile-container .profile-container .text-containe
         width: 100% !important; }
       .cohorts .outer-profile-container .profile-container .rect-image-container {
         width: 100% !important; } }
+@media (max-width: 500px) {
+  .landing-startups li a {
+    font-size: 8px; }
+  .landing-startups .bottom-flex-container .text-container {
+    overflow: hidden;
+    flex: 2 !important; } }
 
 /*# sourceMappingURL=startup.css.map */

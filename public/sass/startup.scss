@@ -65,7 +65,9 @@ h5 {
 
 		.title{
 			flex: 2;
-
+		    display: flex;
+		    align-items: center;
+			
 			h1 {
 				@extend h1;
 				font-size: 80px;
@@ -243,9 +245,10 @@ h5 {
 		.box-header{
 			width: 0px !important;
 		}
-
-		a{
-			font-size: 12px;
+		li {
+			a{
+				font-size: 10px;
+			}
 		}
 
 		.title{
@@ -285,7 +288,7 @@ h5 {
 			}
 
 			.image-container{
-				flex: 3 !important;
+				flex: 2 !important;
 			}
 		}
 	}
@@ -313,6 +316,22 @@ h5 {
 				.rect-image-container{
 					width: 100% !important;
 				}
+			}
+		}
+	}
+}
+
+@media(max-width: 500px) {
+	.landing-startups{
+		li {
+			a{
+				font-size: 8px;
+			}
+		}
+		.bottom-flex-container{
+			.text-container{
+				overflow: hidden;
+				flex: 2 !important;
 			}
 		}
 	}
