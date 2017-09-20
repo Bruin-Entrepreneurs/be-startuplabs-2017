@@ -52,6 +52,10 @@ p {
 	font-size: 15px;
 	font-weight: lighter;
 	letter-spacing: .2px;
+}
+
+span {
+	@extend .rubik;
 }	
 
 .button {
@@ -248,6 +252,16 @@ p {
 
 }
 
+.resources {
+	@extend .program;
+
+	.resources-container {
+			@extend .image-container;
+			background-image: url("../assets/images/main-resources.jpg");
+		}
+}
+
+
 .vignette {
   	position: relative;
 	height: 100%;
@@ -409,9 +423,18 @@ p {
 
 @media(max-width: 500px) {
 	.landing {
+		.outer-flex-container{
+			.inner-nav-flex-container{
+			img {
+				margin: 0 -3% 0 6%;
+				width: 45px;
+				height: auto;
+			}
+		}
+	}
 		li {
 			a{
-				font-size: 8px;
+				font-size: 10px;
 			}
 		}
 	}
