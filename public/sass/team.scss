@@ -56,10 +56,11 @@
 }
 
 .mentor-profiles {
-	height: auto;
+	// height: auto;
 	margin: -40px 3% 0 6%;
 
 	figure {
+		vertical-align: text-top;
 		text-align: center;
 		display: inline-block;
 		margin: 5px 1% 20px 1%;
@@ -106,7 +107,7 @@
 		}
 		.inner-text-container{
 			p{
-				font-size: 13px !important;
+				font-size: 14px !important;
 			}
 		}
 
@@ -118,10 +119,10 @@
 	}
 
 	.mentor-blurb {
-		height: 48vh;
+		height: 52vh;
 		.text-container {
 			p {
-				font-size: 12px;
+				font-size: 14px;
 			}
 		}
 	}

@@ -494,8 +494,6 @@ h5, .cohorts .cohort1 .outer-profile-container .profile-container .text-containe
       .cohorts .outer-profile-container .profile-container .rect-image-container {
         width: 100% !important; } }
 @media (max-width: 500px) {
-  .landing-startups li a {
-    font-size: 8px; }
   .landing-startups .bottom-flex-container .text-container {
     overflow: hidden;
     flex: 2 !important; } }

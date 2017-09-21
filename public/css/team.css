@@ -365,9 +365,9 @@ p {
     position: relative; }
 
 .mentor-profiles {
-  height: auto;
   margin: -40px 3% 0 6%; }
   .mentor-profiles figure {
+    vertical-align: text-top;
     text-align: center;
     display: inline-block;
     margin: 5px 1% 20px 1%;
@@ -395,15 +395,15 @@ p {
     .landing-team .title h1, .landing .outer-flex-container .title-container .landing-team .title h1, .landing-team .title .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container .title h1 {
       font-size: 80px; }
   .landing-team .inner-text-container p {
-    font-size: 13px !important; }
+    font-size: 14px !important; }
 
   .block-section p {
     font-size: 13px; }
 
   .mentor-blurb {
-    height: 48vh; }
+    height: 52vh; }
     .mentor-blurb .text-container p {
-      font-size: 12px; }
+      font-size: 14px; }
 
   .mentor-profiles figure {
     margin: 5px 1% 20px 1%;
