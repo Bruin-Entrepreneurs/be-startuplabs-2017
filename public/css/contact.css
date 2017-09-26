@@ -58,7 +58,7 @@
         font-size: 17px; }
       .footer .logo .love {
         font-size: 12px; } }
-.rubik, h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1, .landing-contact .outer-flex-container .title-container h1, h3, .program .text-container h3, .mentors .text-container h3, .resources .text-container h3, .mentor-blurb .text-container h3, span, .button, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button, .mentor-blurb .text-container .button, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-team .outer-flex-container .inner-nav-flex-container ul li a, .landing-contact .outer-flex-container .inner-nav-flex-container ul li a {
+.rubik, h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1, .landing-contact .outer-flex-container .title-container h1, h3, .program .text-container h3, .mentors .text-container h3, .resources .text-container h3, .mentor-blurb .text-container h3, span, .button, .landing .outer-flex-container .title-container .apply, .landing-team .outer-flex-container .title-container .apply, .landing-contact .outer-flex-container .title-container .apply, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button, .mentor-blurb .text-container .button, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-team .outer-flex-container .inner-nav-flex-container ul li a, .landing-contact .outer-flex-container .inner-nav-flex-container ul li a {
   font-family: 'Rubik', sans-serif; }
 
 .cabin, p, .mentor-profiles figure figcaption {
@@ -100,7 +100,7 @@ p {
   font-weight: lighter;
   letter-spacing: .2px; }
 
-.button, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button, .mentor-blurb .text-container .button {
+.button, .landing .outer-flex-container .title-container .apply, .landing-team .outer-flex-container .title-container .apply, .landing-contact .outer-flex-container .title-container .apply, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button, .mentor-blurb .text-container .button {
   background-color: #072956;
   color: white;
   border: 0px;
@@ -118,7 +118,7 @@ p {
   -moz-transition: .3s;
   -webkit-transition: .3s; }
 
-.button:hover, .program .text-container .button:hover, .mentors .text-container .button:hover, .resources .text-container .button:hover, .mentor-blurb .text-container .button:hover {
+.button:hover, .landing .outer-flex-container .title-container .apply:hover, .landing-team .outer-flex-container .title-container .apply:hover, .landing-contact .outer-flex-container .title-container .apply:hover, .program .text-container .button:hover, .mentors .text-container .button:hover, .resources .text-container .button:hover, .mentor-blurb .text-container .button:hover {
   background-color: #0D53AD; }
 
 .image-container, .program .program-container, .mentors .program-container, .resources .program-container, .mentors .mentors1-container, .resources .resources-container {
@@ -180,6 +180,9 @@ p {
           color: black; }
       .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1, .landing-contact .outer-flex-container .title-container h1 {
         font-size: 130px; }
+      .landing .outer-flex-container .title-container .apply, .landing-team .outer-flex-container .title-container .apply, .landing-contact .outer-flex-container .title-container .apply {
+        margin: 0 0 -60px 0;
+        font-size: 20px; }
 
 .about {
   background-image: url("../assets/images/main-ucla.png");
@@ -226,7 +229,7 @@ p {
   background-image: url("../assets/images/main-mentors.jpg"); }
 
 .resources .resources-container {
-  background-image: url("../assets/images/main-resources.jpg"); }
+  background-image: url("../assets/images/main-resource.jpg"); }
 
 .vignette {
   position: relative;
@@ -293,7 +296,7 @@ p {
   .mentors .text-container {
     order: 1; }
 
-  .button, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button, .mentor-blurb .text-container .button {
+  .button, .landing .outer-flex-container .title-container .apply, .landing-team .outer-flex-container .title-container .apply, .landing-contact .outer-flex-container .title-container .apply, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button, .mentor-blurb .text-container .button {
     font-size: 12px; }
 
   .space {
@@ -330,7 +333,7 @@ p {
   .about p {
     font-size: 12px; }
 
-  .text-container .button, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button, .mentor-blurb .text-container .button {
+  .text-container .button, .text-container .landing .outer-flex-container .title-container .apply, .landing .outer-flex-container .title-container .text-container .apply, .text-container .landing-team .outer-flex-container .title-container .apply, .landing-team .outer-flex-container .title-container .text-container .apply, .text-container .landing-contact .outer-flex-container .title-container .apply, .landing-contact .outer-flex-container .title-container .text-container .apply, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button, .mentor-blurb .text-container .button {
     height: 30px;
     width: 150px;
     font-size: 10px; } }
@@ -365,9 +368,9 @@ p {
     position: relative; }
 
 .mentor-profiles {
-  height: auto;
   margin: -40px 3% 0 6%; }
   .mentor-profiles figure {
+    vertical-align: text-top;
     text-align: center;
     display: inline-block;
     margin: 5px 1% 20px 1%;
@@ -395,15 +398,15 @@ p {
     .landing-team .title h1, .landing .outer-flex-container .title-container .landing-team .title h1, .landing-team .title .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container .title h1, .landing-contact .outer-flex-container .title-container .landing-team .title h1 {
       font-size: 80px; }
   .landing-team .inner-text-container p {
-    font-size: 13px !important; }
+    font-size: 14px !important; }
 
   .block-section p {
     font-size: 13px; }
 
   .mentor-blurb {
-    height: 48vh; }
+    height: 52vh; }
     .mentor-blurb .text-container p {
-      font-size: 12px; }
+      font-size: 14px; }
 
   .mentor-profiles figure {
     margin: 5px 1% 20px 1%;
@@ -434,6 +437,8 @@ p {
         width: 80px; } }
 .landing-contact {
   height: 100vh; }
+  .landing-contact a, .landing-contact a:link, .landing-contact a:active, .landing-contact a:visited, .landing-contact a:hover {
+    text-decoration: none; }
   .landing-contact .outer-flex-container .title {
     margin: 40px 0 30px 0; }
     .landing-contact .outer-flex-container .title h1 {

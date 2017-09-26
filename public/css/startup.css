@@ -392,15 +392,12 @@ h5, .cohorts .cohort1 .outer-profile-container .profile-container .text-containe
         margin-bottom: 30px; }
     .landing-startups .outer-flex-container .bottom-flex-container .image-container, .landing-startups .outer-flex-container .bottom-flex-container .program .program-container, .program .landing-startups .outer-flex-container .bottom-flex-container .program-container, .landing-startups .outer-flex-container .bottom-flex-container .mentors .program-container, .mentors .landing-startups .outer-flex-container .bottom-flex-container .program-container, .landing-startups .outer-flex-container .bottom-flex-container .resources .program-container, .resources .landing-startups .outer-flex-container .bottom-flex-container .program-container, .landing-startups .outer-flex-container .bottom-flex-container .mentors .mentors1-container, .mentors .landing-startups .outer-flex-container .bottom-flex-container .mentors1-container, .landing-startups .outer-flex-container .bottom-flex-container .resources .resources-container, .resources .landing-startups .outer-flex-container .bottom-flex-container .resources-container {
       flex: 6;
-      margin: 10px 0 10px 0;
+      margin: 10px 0px 10px 20px;
       background-image: url("../assets/images/playfull-logo.png");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
       height: auto; }
-      .landing-startups .outer-flex-container .bottom-flex-container .image-container img, .landing-startups .outer-flex-container .bottom-flex-container .program .program-container img, .program .landing-startups .outer-flex-container .bottom-flex-container .program-container img, .landing-startups .outer-flex-container .bottom-flex-container .mentors .program-container img, .mentors .landing-startups .outer-flex-container .bottom-flex-container .program-container img, .landing-startups .outer-flex-container .bottom-flex-container .resources .program-container img, .resources .landing-startups .outer-flex-container .bottom-flex-container .program-container img, .landing-startups .outer-flex-container .bottom-flex-container .mentors .mentors1-container img, .mentors .landing-startups .outer-flex-container .bottom-flex-container .mentors1-container img, .landing-startups .outer-flex-container .bottom-flex-container .resources .resources-container img, .resources .landing-startups .outer-flex-container .bottom-flex-container .resources-container img {
-        width: 200px;
-        height: auto; }
     .landing-startups .outer-flex-container .bottom-flex-container .navy-bar {
       background-color: #072956;
       width: 20px;

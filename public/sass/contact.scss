@@ -4,6 +4,10 @@
 	@extend .landing;
 	height: 100vh;
 
+	a, a:link, a:active, a:visited, a:hover {
+		text-decoration: none;
+  	}
+
 	.outer-flex-container{
 		.title{
 			margin: 40px 0 30px 0; 

@@ -151,7 +151,7 @@ span {
 			}
 		}
 
-		.title-container{
+		.title-container {
 			position: absolute;
 			top: 50%;
 			transform: translate(0,-50%);
@@ -165,9 +165,16 @@ span {
 					color: black;
 				}
 			}
+
 			h1{
 				@extend h1;
 				font-size: 130px;	
+			}
+
+			.apply {
+				@extend .button;
+				margin: 0 0 -60px 0;
+				font-size: 20px;
 			}
 		}
 	}
