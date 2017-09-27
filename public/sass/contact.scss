@@ -4,8 +4,14 @@
 	@extend .landing;
 	height: 100vh;
 
-	a, a:link, a:active, a:visited, a:hover {
+	a, a:link, a:active, a:visited{
+		@extend .pink;
 		text-decoration: none;
+  	}
+
+  	a:hover {
+  		@extend .blue;
+  		text-decoration: none;
   	}
 
 	.outer-flex-container{
@@ -18,9 +24,11 @@
 			
 			.inner-text-container{
 				width: 100%;
+				@extend .rubik;
 
 				.apps {
 					margin: 40px 20px 60px 0;
+
 					p{
 						font-size: 18px;
 					}

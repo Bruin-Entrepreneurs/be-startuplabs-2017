@@ -58,16 +58,16 @@
         font-size: 17px; }
       .footer .logo .love {
         font-size: 12px; } }
-.rubik, h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1, .landing-contact .outer-flex-container .title-container h1, h3, .program .text-container h3, .mentors .text-container h3, .resources .text-container h3, .mentor-blurb .text-container h3, span, .button, .landing .outer-flex-container .title-container .apply, .landing-team .outer-flex-container .title-container .apply, .landing-contact .outer-flex-container .title-container .apply, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button, .mentor-blurb .text-container .button, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-team .outer-flex-container .inner-nav-flex-container ul li a, .landing-contact .outer-flex-container .inner-nav-flex-container ul li a {
+.rubik, h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1, .landing-contact .outer-flex-container .title-container h1, h3, .program .text-container h3, .mentors .text-container h3, .resources .text-container h3, .mentor-blurb .text-container h3, span, .button, .landing .outer-flex-container .title-container .apply, .landing-team .outer-flex-container .title-container .apply, .landing-contact .outer-flex-container .title-container .apply, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button, .mentor-blurb .text-container .button, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-team .outer-flex-container .inner-nav-flex-container ul li a, .landing-contact .outer-flex-container .inner-nav-flex-container ul li a, .landing-contact .outer-flex-container .title .inner-text-container {
   font-family: 'Rubik', sans-serif; }
 
 .cabin, p, .mentor-profiles figure figcaption {
   font-family: 'Cabin', sans-serif; }
 
-.pink, h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1, .landing-contact .outer-flex-container .title-container h1 {
+.pink, h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1, .landing-contact .outer-flex-container .title-container h1, .landing-contact a, .landing-contact a:link, .landing-contact a:active, .landing-contact a:visited {
   color: #F2758F; }
 
-.blue, .landing .outer-flex-container .title-container h2, .landing-team .outer-flex-container .title-container h2, .landing-contact .outer-flex-container .title-container h2 {
+.blue, .landing .outer-flex-container .title-container h2, .landing-team .outer-flex-container .title-container h2, .landing-contact .outer-flex-container .title-container h2, .landing-contact a:hover {
   color: #527EDD; }
 
 .navy, h3, .program .text-container h3, .mentors .text-container h3, .resources .text-container h3, .mentor-blurb .text-container h3, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-team .outer-flex-container .inner-nav-flex-container ul li a, .landing-contact .outer-flex-container .inner-nav-flex-container ul li a, .landing-contact .outer-flex-container .title .inner-text-container a {
@@ -437,7 +437,9 @@ p {
         width: 80px; } }
 .landing-contact {
   height: 100vh; }
-  .landing-contact a, .landing-contact a:link, .landing-contact a:active, .landing-contact a:visited, .landing-contact a:hover {
+  .landing-contact a, .landing-contact a:link, .landing-contact a:active, .landing-contact a:visited {
+    text-decoration: none; }
+  .landing-contact a:hover {
     text-decoration: none; }
   .landing-contact .outer-flex-container .title {
     margin: 40px 0 30px 0; }
