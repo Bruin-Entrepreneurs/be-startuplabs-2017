@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Cabin");
 .background-grid {
   margin: 0 10% 0 10%;
   height: 100%;
@@ -58,8 +60,9 @@
         font-size: 17px; }
       .footer .logo .love {
         font-size: 12px; } }
-.rubik, h1, .landing .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title h1, h3, .program .text-container h3, .mentors .text-container h3, .resources .text-container h3, span, .button, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-startups .outer-flex-container .inner-nav-flex-container ul li a, h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container h4, .cohorts .cohort1 .title-container h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container {
-  font-family: 'Rubik', sans-serif; }
+.rubik, h1, .landing .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title h1, h3, .program .text-container h3, .mentors .text-container h3, .resources .text-container h3, span, .button, .landing .outer-flex-container .title-container .apply, .landing-startups .outer-flex-container .title-container .apply, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-startups .outer-flex-container .inner-nav-flex-container ul li a, h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container h4, .cohorts .cohort1 .title-container h4, .landing-startups .outer-flex-container .bottom-flex-container .text-container {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bolder; }
 
 .cabin, p {
   font-family: 'Cabin', sans-serif; }
@@ -89,7 +92,7 @@ section {
 
 h1, .landing .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title h1 {
   margin: 4px 0px 5px 0px;
-  font-weight: bold; }
+  font-weight: bolder; }
 
 h3, .program .text-container h3, .mentors .text-container h3, .resources .text-container h3 {
   font-size: 38px;
@@ -100,7 +103,7 @@ p {
   font-weight: lighter;
   letter-spacing: .2px; }
 
-.button, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button {
+.button, .landing .outer-flex-container .title-container .apply, .landing-startups .outer-flex-container .title-container .apply, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button {
   background-color: #072956;
   color: white;
   border: 0px;
@@ -118,7 +121,7 @@ p {
   -moz-transition: .3s;
   -webkit-transition: .3s; }
 
-.button:hover, .program .text-container .button:hover, .mentors .text-container .button:hover, .resources .text-container .button:hover {
+.button:hover, .landing .outer-flex-container .title-container .apply:hover, .landing-startups .outer-flex-container .title-container .apply:hover, .program .text-container .button:hover, .mentors .text-container .button:hover, .resources .text-container .button:hover {
   background-color: #0D53AD; }
 
 .image-container, .program .program-container, .mentors .program-container, .resources .program-container, .mentors .mentors1-container, .resources .resources-container {
@@ -180,6 +183,9 @@ p {
           color: black; }
       .landing .outer-flex-container .title-container h1, .landing-startups .outer-flex-container .title-container h1 {
         font-size: 130px; }
+      .landing .outer-flex-container .title-container .apply, .landing-startups .outer-flex-container .title-container .apply {
+        margin: 0 0 -60px 0;
+        font-size: 20px; }
 
 .about {
   background-image: url("../assets/images/main-ucla.png");
@@ -293,7 +299,7 @@ p {
   .mentors .text-container {
     order: 1; }
 
-  .button, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button {
+  .button, .landing .outer-flex-container .title-container .apply, .landing-startups .outer-flex-container .title-container .apply, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button {
     font-size: 12px; }
 
   .space {
@@ -330,7 +336,7 @@ p {
   .about p {
     font-size: 12px; }
 
-  .text-container .button, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button {
+  .text-container .button, .text-container .landing .outer-flex-container .title-container .apply, .landing .outer-flex-container .title-container .text-container .apply, .text-container .landing-startups .outer-flex-container .title-container .apply, .landing-startups .outer-flex-container .title-container .text-container .apply, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button {
     height: 30px;
     width: 150px;
     font-size: 10px; } }

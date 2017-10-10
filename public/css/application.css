@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Cabin");
 .background-grid {
   margin: 0 10% 0 10%;
   height: 100%;
@@ -59,7 +61,8 @@
       .footer .logo .love {
         font-size: 12px; } }
 .rubik, h1, .landing .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title h4, h3, .program .text-container h3, .mentors .text-container h3, .resources .text-container h3, span, .button, .landing .outer-flex-container .title-container .apply, .landing-application .outer-flex-container .title-container .apply, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-application .outer-flex-container .inner-nav-flex-container ul li a {
-  font-family: 'Rubik', sans-serif; }
+  font-family: 'Rubik', sans-serif;
+  font-weight: bolder; }
 
 .cabin, p {
   font-family: 'Cabin', sans-serif; }
@@ -89,7 +92,7 @@ section {
 
 h1, .landing .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title-container h1, .landing-application .outer-flex-container .title h4 {
   margin: 4px 0px 5px 0px;
-  font-weight: bold; }
+  font-weight: bolder; }
 
 h3, .program .text-container h3, .mentors .text-container h3, .resources .text-container h3 {
   font-size: 38px;
