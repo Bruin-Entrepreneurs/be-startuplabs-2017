@@ -1,0 +1,23 @@
+.background-grid {
+  margin: 0 10% 0 10%;
+  height: 100%;
+  width: 80%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: -1; }
+
+.gray-bar {
+  height: 100%;
+  width: 100px;
+  background-color: rgba(196, 196, 196, 0.3);
+  margin: 0px 15px 0px 15px;
+  z-index: -1; }
+  .gray-bar:last-child {
+    margin-right: 0px; }
+  .gray-bar:first-child {
+    margin-left: 0px; }
+
+/*# sourceMappingURL=background.css.map */

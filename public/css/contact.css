@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Cabin");
 .background-grid {
   margin: 0 10% 0 10%;
   height: 100%;
@@ -59,7 +61,8 @@
       .footer .logo .love {
         font-size: 12px; } }
 .rubik, h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1, .landing-contact .outer-flex-container .title-container h1, h3, .program .text-container h3, .mentors .text-container h3, .resources .text-container h3, .mentor-blurb .text-container h3, span, .button, .landing .outer-flex-container .title-container .apply, .landing-team .outer-flex-container .title-container .apply, .landing-contact .outer-flex-container .title-container .apply, .program .text-container .button, .mentors .text-container .button, .resources .text-container .button, .mentor-blurb .text-container .button, .landing .outer-flex-container .inner-nav-flex-container ul li a, .landing-team .outer-flex-container .inner-nav-flex-container ul li a, .landing-contact .outer-flex-container .inner-nav-flex-container ul li a, .landing-contact .outer-flex-container .title .inner-text-container {
-  font-family: 'Rubik', sans-serif; }
+  font-family: 'Rubik', sans-serif;
+  font-weight: bolder; }
 
 .cabin, p, .mentor-profiles figure figcaption {
   font-family: 'Cabin', sans-serif; }
@@ -89,7 +92,7 @@ section {
 
 h1, .landing .outer-flex-container .title-container h1, .landing-team .outer-flex-container .title-container h1, .landing-contact .outer-flex-container .title-container h1 {
   margin: 4px 0px 5px 0px;
-  font-weight: bold; }
+  font-weight: bolder; }
 
 h3, .program .text-container h3, .mentors .text-container h3, .resources .text-container h3, .mentor-blurb .text-container h3 {
   font-size: 38px;

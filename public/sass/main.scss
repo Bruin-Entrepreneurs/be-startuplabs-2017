@@ -1,8 +1,10 @@
 @import 'background';
 @import 'footer';
-
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Cabin');
 .rubik{
 	font-family: 'Rubik', sans-serif;
+	font-weight: bolder;
 }
 .cabin{
 	font-family: 'Cabin', sans-serif;
@@ -37,7 +39,7 @@ h1{
 	@extend .rubik;
 	@extend .pink;
 	margin: 4px 0px 5px 0px;
-	font-weight: bold;		
+	font-weight: bolder;		
 }
 
 h3{
